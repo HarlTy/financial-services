@@ -1,5 +1,5 @@
 {
-  "name": "claude-for-financial-services",
+  "name": "harlty-financial-services",
   "owner": {
     "name": "Matt Piccolella"
   },
@@ -123,6 +123,12 @@
       "displayName": "Claude for Microsoft 365 Install",
       "source": "./claude-for-msft-365-install",
       "description": "Provision direct cloud access (Vertex AI, Bedrock, or LLM gateway) for the Claude Microsoft 365 add-in. Generates the customized manifest, walks through Azure admin consent, and writes per-user config via Graph extension attributes."
+    },
+    {
+      "name": "personal-financial-strategy",
+      "displayName": "Personal Financial Strategy",
+      "source": "./plugins/vertical-plugins/personal-financial-strategy",
+      "description": "Client-side personal planning: retirement, tax, WA-specific rules, business-owner plans, and advisor-meeting prep (educational)"
     }
   ]
 }

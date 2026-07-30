@@ -5,7 +5,7 @@ Single source of truth for plugin version-bump enforcement.
 A plugin's `.claude-plugin/plugin.json` `version` gates update delivery to
 already-installed users (Claude Code only re-delivers a plugin when its
 version changes). This script guarantees that any plugin modified on a
-branch ends up exactly one patch ahead of `main` — bumped once, not once
+branch ends up exactly one patch ahead of `main` -- bumped once, not once
 per commit.
 
 Modes
@@ -64,7 +64,7 @@ def all_plugin_jsons() -> list[Path]:
     """Every <plugin>/.claude-plugin/plugin.json in the repo."""
     return sorted(
         p for p in ROOT.glob("**/.claude-plugin/plugin.json")
-        if ".git/" not in str(p)
+        if ".git/" not in p.as_posix()
     )
 
 
@@ -74,7 +74,16 @@ def plugin_root(plugin_json: Path) -> Path:
 
 
 def rel(p: Path) -> str:
-    return str(p.relative_to(ROOT))
+    """Repo-relative path, always forward-slashed.
+
+    git never uses backslashes: not in `diff --name-only` output, and not in a
+    `<rev>:<path>` revision spec. `str(WindowsPath)` yields backslashes, which
+    makes `git show base:plugins\\...` fail outright -- and because that failure
+    is swallowed into a None base version, the caller concludes the plugin is
+    new and skips the bump. Normalizing here keeps the whole module in git's
+    own path vocabulary.
+    """
+    return p.relative_to(ROOT).as_posix()
 
 
 def parse_semver(v: str) -> tuple[int, int, int] | None:
@@ -91,7 +100,7 @@ def parse_semver(v: str) -> tuple[int, int, int] | None:
 def patch_bump(v: str) -> str:
     sv = parse_semver(v)
     if sv is None:
-        # Unparseable base — start a clean patch series.
+        # Unparseable base -- start a clean patch series.
         return "0.0.1"
     return f"{sv[0]}.{sv[1]}.{sv[2] + 1}"
 
@@ -117,11 +126,11 @@ def working_version(plugin_json: Path) -> str | None:
 def is_ahead(work: str | None, base: str | None) -> bool:
     """True if the working version is strictly greater than the base version."""
     if base is None:
-        # Plugin is new on this branch — nothing to be 'ahead' of.
+        # Plugin is new on this branch -- nothing to be 'ahead' of.
         return True
     wv, bv = parse_semver(work or ""), parse_semver(base)
     if wv is None or bv is None:
-        # Can't compare numerically — fall back to 'changed string == bump'.
+        # Can't compare numerically -- fall back to 'changed string == bump'.
         return (work or "") != base
     return wv > bv
 
@@ -132,15 +141,15 @@ def changed_plugins(base: str, staged_only: bool) -> list[Path]:
         files = git_ok("diff", "--cached", "--name-only") or ""
     else:
         files = git_ok("diff", "--name-only", f"{base}...HEAD") or ""
-    changed = {Path(line) for line in files.splitlines() if line}
+    # git reports forward-slashed, repo-relative paths on every platform, so
+    # compare as plain strings rather than round-tripping through Path (whose
+    # str() would reintroduce backslashes on Windows).
+    changed = [line.strip() for line in files.splitlines() if line.strip()]
 
     hits: list[Path] = []
     for pj in all_plugin_jsons():
-        root_rel = Path(rel(plugin_root(pj)))
-        if any(
-            c == root_rel or root_rel in c.parents or str(c).startswith(f"{root_rel}/")
-            for c in changed
-        ):
+        root_rel = rel(plugin_root(pj))
+        if any(c == root_rel or c.startswith(f"{root_rel}/") for c in changed):
             hits.append(pj)
     return hits
 
@@ -151,7 +160,7 @@ def cmd_apply(base: str) -> int:
         work = working_version(pj)
         bv = base_version(base, pj)
         if is_ahead(work, bv):
-            continue  # already bumped on this branch — idempotent no-op
+            continue  # already bumped on this branch -- idempotent no-op
         new = patch_bump(bv or work or "0.0.0")
         data = json.loads(pj.read_text())
         data["version"] = new
@@ -177,13 +186,13 @@ def cmd_check(base: str) -> int:
             )
     if violations:
         print(
-            f"FAIL — {len(violations)} plugin(s) changed without a version bump:\n",
+            f"FAIL -- {len(violations)} plugin(s) changed without a version bump:\n",
             file=sys.stderr,
         )
         for v in violations:
-            print(f"  ✗ {v}", file=sys.stderr)
+            print(f"  x {v}", file=sys.stderr)
         return 1
-    print("OK — all changed plugins have a version bump.")
+    print("OK -- all changed plugins have a version bump.")
     return 0
 
 

@@ -1,18 +1,68 @@
 #!/usr/bin/env bash
-# Auto patch-bump any plugin with staged changes so it ends up exactly one
-# patch ahead of main — bumped once per branch, not once per commit.
+# Plugin version-bump gate (pre-commit).
+#
+# Why: a plugin's .claude-plugin/plugin.json `version` is what gates update
+# delivery -- Claude Code only re-delivers a plugin to already-installed users
+# when its version changes. Content that ships without a version bump is
+# invisible to everyone who already has the plugin.
+#
+# Semantics -- the invariant is "unbumped content cannot land", achieved by
+# construction rather than refusal:
+#
+#   1. Auto-bump on unbumped change. Any plugin with staged changes that is
+#      not yet ahead of the base ref is patch-bumped (base + 1), `git add`ed
+#      into the same commit, and reported on stdout. The commit proceeds --
+#      the gate repairs the omission instead of rejecting the work.
+#
+#   2. Manual bumps are respected. A plugin already ahead of base is left
+#      untouched, so a deliberate minor/major bump survives intact and
+#      repeated commits on a branch bump once, not once per commit.
+#
+#   3. Missing interpreter is a hard failure. If no working Python 3 is found
+#      the commit is BLOCKED, never silently skipped. A gate that fails open
+#      reports success while enforcing nothing -- which is precisely how
+#      unbumped versions reached main before this was fixed.
+#
+#   4. --check backstops --no-verify. .github/workflows/version-bump.yml runs
+#      `version_bump.py --check` on every PR, so bypassing this hook locally
+#      surfaces in CI rather than merging unnoticed.
 #
 # Install (one-time per clone):  git config core.hooksPath .githooks
 # (scripts/check.py self-installs this for you on first run.)
 #
 # Bypass for a single commit:    git commit --no-verify
+# Shared logic lives in scripts/version_bump.py (same module CI runs).
 set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 
-if ! command -v python3 >/dev/null 2>&1; then
-  echo "[pre-commit] python3 not found; skipping version-bump." >&2
-  exit 0
+# Resolve a Python 3 interpreter. Windows rarely exposes `python3` — installs
+# from python.org provide `python` plus the `py` launcher, and the Microsoft
+# Store build ships a `python3` stub that exits non-zero without running
+# anything. Probing `python3` alone therefore disabled this gate on every
+# managed Windows box. Each candidate is validated by executing real code, so
+# a non-functional stub is rejected rather than trusted.
+PY=""
+for candidate in "python3" "python" "py -3"; do
+  if command -v "${candidate%% *}" >/dev/null 2>&1 \
+    && $candidate -c "import sys; sys.exit(0 if sys.version_info >= (3, 8) else 1)" \
+      >/dev/null 2>&1; then
+    PY="$candidate"
+    break
+  fi
+done
+
+# A gate that fails open is worse than no gate: it reports success while
+# enforcing nothing, which is precisely how unbumped plugin versions reached
+# main. Missing interpreter is a hard failure, never a skip.
+if [ -z "$PY" ]; then
+  echo "[pre-commit] FATAL: no working Python 3 interpreter found." >&2
+  echo "[pre-commit] Tried: python3, python, py -3" >&2
+  echo "[pre-commit] The plugin version-bump gate cannot run, so this commit is" >&2
+  echo "[pre-commit] BLOCKED rather than silently skipped." >&2
+  echo "[pre-commit] Fix: install Python 3.8+ and ensure it is on PATH." >&2
+  echo "[pre-commit] Deliberate bypass: git commit --no-verify" >&2
+  exit 1
 fi
 
-python3 "$REPO_ROOT/scripts/version_bump.py" --apply
+$PY "$REPO_ROOT/scripts/version_bump.py" --apply

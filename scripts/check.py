@@ -43,7 +43,7 @@ def ensure_hooks_installed() -> None:
             )
             print(f"[check.py] installed git hooks (core.hooksPath -> {want})")
     except (subprocess.SubprocessError, OSError):
-        pass  # not a git checkout / git unavailable — ignore
+        pass  # not a git checkout / git unavailable -- ignore
 
 
 # Install hooks before anything that can exit early (e.g. missing pyyaml),
@@ -212,8 +212,8 @@ for ps in sorted(ROOT.rglob("*.ps1")):
 
 # --- report ----------------------------------------------------------------
 if errors:
-    print(f"FAIL — {len(errors)} issue(s) across {checked} file(s):\n", file=sys.stderr)
+    print(f"FAIL -- {len(errors)} issue(s) across {checked} file(s):\n", file=sys.stderr)
     for e in errors:
-        print(f"  ✗ {e}", file=sys.stderr)
+        print(f"  x {e}", file=sys.stderr)
     sys.exit(1)
-print(f"OK — {checked} file(s) checked, 0 issues.")
+print(f"OK -- {checked} file(s) checked, 0 issues.")

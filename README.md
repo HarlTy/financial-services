@@ -255,6 +255,17 @@ Everything here is markdown and YAML. Fork, edit, PR. For new content:
 - New agent → `plugins/agent-plugins/<slug>/` (with `agents/<slug>.md` + `skills/`) and a matching `managed-agent-cookbooks/<slug>/`.
 - Run `python3 scripts/check.py` before pushing — it lints every manifest, verifies all cross-file references resolve, and fails if any bundled skill has drifted from its vertical source.
 
+### Plugin versions are enforced, not remembered
+
+A plugin's `.claude-plugin/plugin.json` `version` is what gates update delivery — Claude Code only re-delivers a plugin to already-installed users when its version changes, so content that ships without a bump is invisible to everyone who already has it. A pre-commit hook (`.githooks/pre-commit`, installed for you the first time you run `scripts/check.py`) enforces this so you never have to remember it:
+
+- **Auto-bump on unbumped change.** Touch a plugin without bumping it and the hook patch-bumps it (base + 1), stages the result into the same commit, and says so. The commit proceeds — the gate repairs the omission rather than rejecting your work.
+- **Manual bumps are respected.** Already ahead of `main`? The hook leaves it alone. A deliberate minor or major bump survives, and repeated commits on a branch bump once, not once per commit.
+- **A missing Python interpreter blocks the commit.** It does not skip. A gate that fails open reports success while enforcing nothing. The hook resolves `python3 → python → py -3` and validates each candidate by running real code, so a non-functional stub is rejected rather than trusted.
+- **CI backstops `--no-verify`.** [`version-bump.yml`](./.github/workflows/version-bump.yml) runs `scripts/version_bump.py --check` on every PR, so a locally bypassed hook surfaces there instead of merging unnoticed.
+
+Bypass a single commit deliberately with `git commit --no-verify`. Both the hook and CI call the same module, `scripts/version_bump.py`.
+
 ## License
 
 [Apache License 2.0](./LICENSE)

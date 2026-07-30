@@ -1,11 +1,37 @@
 #!/usr/bin/env bash
-# Auto patch-bump any plugin with staged changes so it ends up exactly one
-# patch ahead of main — bumped once per branch, not once per commit.
+# Plugin version-bump gate (pre-commit).
+#
+# Why: a plugin's .claude-plugin/plugin.json `version` is what gates update
+# delivery -- Claude Code only re-delivers a plugin to already-installed users
+# when its version changes. Content that ships without a version bump is
+# invisible to everyone who already has the plugin.
+#
+# Semantics -- the invariant is "unbumped content cannot land", achieved by
+# construction rather than refusal:
+#
+#   1. Auto-bump on unbumped change. Any plugin with staged changes that is
+#      not yet ahead of the base ref is patch-bumped (base + 1), `git add`ed
+#      into the same commit, and reported on stdout. The commit proceeds --
+#      the gate repairs the omission instead of rejecting the work.
+#
+#   2. Manual bumps are respected. A plugin already ahead of base is left
+#      untouched, so a deliberate minor/major bump survives intact and
+#      repeated commits on a branch bump once, not once per commit.
+#
+#   3. Missing interpreter is a hard failure. If no working Python 3 is found
+#      the commit is BLOCKED, never silently skipped. A gate that fails open
+#      reports success while enforcing nothing -- which is precisely how
+#      unbumped versions reached main before this was fixed.
+#
+#   4. --check backstops --no-verify. .github/workflows/version-bump.yml runs
+#      `version_bump.py --check` on every PR, so bypassing this hook locally
+#      surfaces in CI rather than merging unnoticed.
 #
 # Install (one-time per clone):  git config core.hooksPath .githooks
 # (scripts/check.py self-installs this for you on first run.)
 #
 # Bypass for a single commit:    git commit --no-verify
+# Shared logic lives in scripts/version_bump.py (same module CI runs).
 set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"

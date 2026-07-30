@@ -2,6 +2,7 @@
 
 | | |
 |---|---|
+| **Baseline ID** | `Skill @ v1.0-wa-only 1055500` |
 | **Tag** | `v1.0-wa-only` @ `1055500` |
 | **Branch** | `state-modules` |
 | **Run date** | 2026-07-29 |

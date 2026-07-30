@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -71,6 +72,88 @@ def all_plugin_jsons() -> list[Path]:
 def plugin_root(plugin_json: Path) -> Path:
     # <root>/.claude-plugin/plugin.json -> <root>
     return plugin_json.parent.parent
+
+
+# --- SKILL.md body version marker ------------------------------------------
+# Once a skill carries a version, it lives in two places: the manifest at
+# .claude-plugin/plugin.json, and a `Version:` line in the BODY of
+# skills/<name>/SKILL.md. They answer different questions. The manifest gates
+# update delivery to installed users; the body line is what makes a packaged
+# .skill or a serving copy identifiable by inspection, since the manifest is
+# not part of the skill package.
+#
+# Two places that must agree, only one of which this script touched, is a gate
+# that manufactures its own violation: --apply would bump the manifest, leave
+# the body line stale, and scripts/check.py would then reject the very commit
+# the pre-commit hook had just written. So --apply syncs the body line and
+# --check compares it.
+#
+# The line is only ever REWRITTEN, never inserted. A skill that has not opted
+# in by carrying the line is left exactly as it is -- today that is every
+# SKILL.md in the repo except financial-strategy, so this writes one file.
+SKILL_VERSION_RE = re.compile(r"^Version:[ \t]*(\S+)[ \t]*$", re.MULTILINE)
+
+
+def skill_mds(root: Path) -> list[Path]:
+    """Every <plugin_root>/skills/*/SKILL.md."""
+    return sorted(root.glob("skills/*/SKILL.md"))
+
+
+def _split_body(text: str) -> tuple[str, str]:
+    """(everything up to and including the frontmatter, body).
+
+    Scoped deliberately so a future `version:` KEY in frontmatter can never be
+    mistaken for the body marker, or edited by it. Text with no frontmatter is
+    all body.
+    """
+    if not text.startswith("---"):
+        return "", text
+    parts = text.split("---", 2)
+    if len(parts) != 3:
+        return "", text
+    return parts[0] + "---" + parts[1] + "---", parts[2]
+
+
+def _read_md(md: Path) -> str | None:
+    """Read a markdown file as UTF-8, or None if it cannot be.
+
+    Explicit encoding, unlike the rest of this repo's bare read_text() calls:
+    the default on Windows is cp1252, and 20 SKILL.md files in this repo raise
+    UnicodeDecodeError under it. In --apply that would exit non-zero and BLOCK
+    every commit touching those plugins -- invisible in CI, total on Windows,
+    the same asymmetry the .ps1 rule in CLAUDE.md exists for.
+    """
+    try:
+        return md.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return None
+
+
+def read_skill_version(md: Path) -> str | None:
+    """The body's declared version, or None when the file carries no marker."""
+    text = _read_md(md)
+    if text is None:
+        return None
+    m = SKILL_VERSION_RE.search(_split_body(text)[1])
+    return m.group(1) if m else None
+
+
+def write_skill_version(md: Path, new: str) -> bool:
+    """Rewrite an existing body `Version:` line. False when there is none.
+
+    write_bytes rather than write_text: write_text uses newline=None, which
+    translates every LF to CRLF on Windows, and Path.write_text(newline=) is
+    3.10+ while .githooks/pre-commit only guarantees 3.8.
+    """
+    text = _read_md(md)
+    if text is None:
+        return False
+    prefix, body = _split_body(text)
+    new_body, n = SKILL_VERSION_RE.subn(f"Version: {new}", body, count=1)
+    if n == 0:
+        return False
+    md.write_bytes((prefix + new_body).encode("utf-8"))
+    return True
 
 
 def rel(p: Path) -> str:
@@ -156,20 +239,37 @@ def changed_plugins(base: str, staged_only: bool) -> list[Path]:
 
 def cmd_apply(base: str) -> int:
     bumped = []
+    synced = []
     for pj in changed_plugins(base, staged_only=True):
         work = working_version(pj)
         bv = base_version(base, pj)
-        if is_ahead(work, bv):
-            continue  # already bumped on this branch -- idempotent no-op
-        new = patch_bump(bv or work or "0.0.0")
-        data = json.loads(pj.read_text())
-        data["version"] = new
-        pj.write_text(json.dumps(data, indent=2) + "\n")
-        git("add", rel(pj))
-        bumped.append((rel(plugin_root(pj)), bv, new))
+        if not is_ahead(work, bv):
+            new = patch_bump(bv or work or "0.0.0")
+            data = json.loads(pj.read_text())
+            data["version"] = new
+            pj.write_text(json.dumps(data, indent=2) + "\n")
+            git("add", rel(pj))
+            bumped.append((rel(plugin_root(pj)), bv, new))
+            work = new
+
+        # Sync body markers OUTSIDE the is_ahead guard, sourcing truth from the
+        # manifest. Inside the guard this would only self-heal when it also
+        # bumped; outside, it repairs a hand-edited plugin.json too -- which
+        # matches the hook's documented posture of repairing the omission
+        # rather than rejecting the work.
+        if work:
+            for md in skill_mds(plugin_root(pj)):
+                declared = read_skill_version(md)
+                if declared is None or declared == work:
+                    continue  # no marker, or already correct
+                if write_skill_version(md, work):
+                    git("add", rel(md))
+                    synced.append((rel(md), declared, work))
 
     for name, old, new in bumped:
         print(f"[version-bump] {name}: {old or '(new)'} -> {new}")
+    for name, old, new in synced:
+        print(f"[version-bump] {name}: body Version: {old} -> {new}")
     return 0
 
 
@@ -184,15 +284,23 @@ def cmd_check(base: str) -> int:
                 f"({bv} -> {work}). Bump .claude-plugin/plugin.json version "
                 f"(or run scripts/check.py once to install the pre-commit hook)."
             )
+        for md in skill_mds(plugin_root(pj)):
+            declared = read_skill_version(md)
+            if declared is not None and declared != work:
+                violations.append(
+                    f"{rel(md)}: body says 'Version: {declared}' but "
+                    f"{rel(pj)} says '{work}'. These two must move together; "
+                    f"run scripts/version_bump.py --apply to sync."
+                )
     if violations:
         print(
-            f"FAIL -- {len(violations)} plugin(s) changed without a version bump:\n",
+            f"FAIL -- {len(violations)} version violation(s):\n",
             file=sys.stderr,
         )
         for v in violations:
             print(f"  x {v}", file=sys.stderr)
         return 1
-    print("OK -- all changed plugins have a version bump.")
+    print("OK -- changed plugins bumped, and body version markers agree.")
     return 0
 
 

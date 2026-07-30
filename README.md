@@ -253,7 +253,7 @@ Everything here is markdown and YAML. Fork, edit, PR. For new content:
 
 - New skill → add it under `plugins/vertical-plugins/<vertical>/skills/`, then run `python3 scripts/sync-agent-skills.py` to propagate to any agent that bundles it.
 - New agent → `plugins/agent-plugins/<slug>/` (with `agents/<slug>.md` + `skills/`) and a matching `managed-agent-cookbooks/<slug>/`.
-- Run `python3 scripts/check.py` before pushing — it lints every manifest, verifies all cross-file references resolve, and fails if any bundled skill has drifted from its vertical source.
+- Run `python3 scripts/check.py` before pushing — it lints every manifest, verifies all cross-file references resolve (including the markdown reference paths written inside a skill), fails if any bundled skill has drifted from its vertical source, and cross-checks a `SKILL.md` body `Version:` line against its plugin manifest.
 
 ### Plugin versions are enforced, not remembered
 
@@ -261,6 +261,7 @@ A plugin's `.claude-plugin/plugin.json` `version` is what gates update delivery 
 
 - **Auto-bump on unbumped change.** Touch a plugin without bumping it and the hook patch-bumps it (base + 1), stages the result into the same commit, and says so. The commit proceeds — the gate repairs the omission rather than rejecting your work.
 - **Manual bumps are respected.** Already ahead of `main`? The hook leaves it alone. A deliberate minor or major bump survives, and repeated commits on a branch bump once, not once per commit.
+- **A `SKILL.md` body `Version:` line is kept in sync.** The manifest is not part of the skill package, so a packaged `.skill` cannot be identified by inspection; a skill may carry a `Version:` line in its body to close that. The hook rewrites that line to match the manifest — never inserts one, so skills that have not opted in are untouched. Without this, bumping the manifest alone would leave the body stale and `check.py` would reject the commit the hook just wrote.
 - **A missing Python interpreter blocks the commit.** It does not skip. A gate that fails open reports success while enforcing nothing. The hook resolves `python3 → python → py -3` and validates each candidate by running real code, so a non-functional stub is rejected rather than trusted.
 - **CI backstops `--no-verify`.** [`version-bump.yml`](./.github/workflows/version-bump.yml) runs `scripts/version_bump.py --check` on every PR, so a locally bypassed hook surfaces there instead of merging unnoticed.
 

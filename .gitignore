@@ -2,6 +2,14 @@
 .DS_Store
 Thumbs.db
 
+# Personal financial data - local only, never commit (see retirement-model/ENGINE_SPEC.md)
+/scenario.json
+/Retirement*.xlsx
+/retirement-strategy*.xlsx
+/~$*.xlsx
+/retirement-model/local/
+/retirement-model/expectations/local-*
+
 # IDE and Editor
 .vscode/
 .idea/

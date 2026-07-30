@@ -26,13 +26,21 @@ For each: full education, scenario math, and a "take to your advisor" block (the
 - If a needed figure is absent from the tables: say so, use a clearly labeled placeholder or range, and add it to the refresh list. Never invent a number, citation, or rule.
 - Lesson encoded from the build's own verification pass: secondary tax-summary sites routinely carry prior-year thresholds labeled as current-year — for any inflation-indexed threshold, primary-source confirmation is the only acceptable basis.
 
+## Authority-handling rules
+- Citations come from `references/authorities.md` or from text retrieved this session — never from unaided memory. A section number found in neither place does not get cited.
+- Hierarchy when sources disagree: statute → regulation → agency guidance (Rev. Proc./Notice, CMS rules, SSA POMS, WA DOR issuances) → publications and FAQs (persuasive only). Name the level when it matters.
+- Pin-cite to the section; when text was retrieved, append the retrieval date. Paraphrase the operative rule; quote at most a sentence or two.
+- Litigation posture (e.g., the ESSB 6346 challenge) is a moving target: check a docket source if one is available in the session; otherwise state the last-verified posture and its date.
+- The map exists for conversational leverage, not self-help lawyering: authorities feed the "Authorities in play" packet section and the questions handed to the professional — the judgment call stays with the CPA, attorney, or fiduciary.
+
 ## Annual refresh checklist (run each November–December, or on request)
 1. IRS: the new-year inflation-adjustment Rev. Proc. and the retirement-limits Notice → update income-tax and retirement tables; the spring Rev. Proc. → HSA table.
 2. SSA fact sheet: COLA, wage base, earnings-test amounts.
 3. CMS fact sheet: Part B premium and deductible, IRMAA tiers and surcharge dollars, Part D base premium.
 4. WA DOR: capital-gains standard deduction; estate-tax exclusion and rate tables. The statute changed in both 2025 and 2026 — check every year without exception.
 5. Legislative watch: OBBBA temporary provisions (tips/overtime/senior bonus through 2028; SALT reversion 2030); IRMAA fifth-tier indexing resumption (2028); ACA premium-credit status (politically live); WA ESSB 6346 (9.9% tax on income over $1M, effective 2028) and initiative I-645 (November 3, 2026 ballot); WA Cares amendments.
-6. Clear resolved VERIFY flags; update the "Last verified" date in every file.
+6. Re-verify the authorities map: statute/WAC renumbering, new public laws, codification of P.L. 119-21 provisions still cited at the session-law level, and litigation posture (ESSB 6346 challenge; I-645 result).
+7. Clear resolved VERIFY flags; update the "Last verified" date in every file.
 
 ## Scope honesty
 This skill covers U.S. federal plus Washington State rules for a personal/household context, with a business-owner overlay. Multi-state residency, international assets, concentrated equity compensation, and special-needs planning are out of depth — name the gap and route to the professional rather than stretch.

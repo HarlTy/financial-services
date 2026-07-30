@@ -7,6 +7,7 @@ Last verified: 2026-07-28. TY2026 limits from IRS Notice 2025-67.
 - The **§415(c) annual-additions limit** — $72,000 — applies **separately per unrelated employer**.
 - Consequence: someone can max deferrals at the W-2 employer's plan AND still receive employer (profit-sharing) contributions to a Solo 401(k) on LLC self-employment income, up to a separate $72,000 ceiling on that side.
 - **Cross-foot every contribution plan before delivery:** W-2 deferrals + Solo 401(k) deferrals ≤ $24,500 (+ catch-up); each employer's total additions ≤ $72,000; employer contribution ≤ the deduction limit on net self-employment income. State each leg of the check.
+- **Controlled/affiliated-service-group check (IRC §414(b), (c), (m)):** the separate per-employer §415(c) limit holds only if the W-2 employer and the LLC are genuinely unrelated. Common ownership or an affiliated-service arrangement collapses the two into one limit. Flag this as a confirm-with-the-CPA item on any dual-plan strategy — it is the load-bearing assumption (see `references/authorities.md`).
 
 ## Employer-contribution math (sole proprietor / single-member LLC)
 The deductible employer contribution is ≈ **20% of net self-employment earnings** — the statutory 25%-of-compensation limit applied after reducing income by ½ of SE tax and by the contribution itself. Show the computation; never hand-wave the 25%-vs-20% distinction, and never apply 25% directly to Schedule C net profit.

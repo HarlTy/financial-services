@@ -1,6 +1,6 @@
 ---
 name: financial-strategy
-description: Personal financial strategy education and advisor-meeting preparation across the full scope of comprehensive wealth management. Use this skill whenever the user mentions retirement planning, a financial plan, Roth conversions, RMDs, Social Security claiming, Medicare or IRMAA, 401(k)/IRA/HSA/529 contributions or limits, Solo 401(k)/SEP/SIMPLE plans, withdrawal strategy or safe withdrawal rates, asset allocation or asset location, estate or gift tax, Washington capital gains or estate tax, community property, WA Cares, charitable giving (DAFs, QCDs), insurance needs, education funding, business-owner retirement plans, or preparing for a meeting with a wealth manager or financial advisor — even for a single number lookup. Educational only; routes security selection, insurance product purchases, estate document drafting, and tax-return positions to the user's fiduciary advisor, CPA, or attorney.
+description: Personal financial strategy education and advisor-meeting preparation across the full scope of comprehensive wealth management. Use this skill whenever the user mentions retirement planning, a financial plan, Roth conversions, RMDs, Social Security claiming, Medicare or IRMAA, 401(k)/IRA/HSA/529 contributions or limits, Solo 401(k)/SEP/SIMPLE plans, withdrawal strategy or safe withdrawal rates, asset allocation or asset location, estate or gift tax, Washington capital gains or estate tax, community property, WA Cares, charitable giving (DAFs, QCDs), insurance needs, education funding, business-owner retirement plans, or preparing for a meeting with a wealth manager or financial advisor — even for a single number lookup — and when the user asks which law, statute, or regulation (IRC, ERISA, RCW) governs a planning topic. Educational only; routes security selection, insurance product purchases, estate document drafting, and tax-return positions to the user's fiduciary advisor, CPA, or attorney.
 ---
 
 # Financial Strategy — Personal Planning & Advisor-Meeting Prep
@@ -17,6 +17,7 @@ An educational financial-planning skill modeled on the service scope of full-ser
 6. **Assumption disclosure.** When a conclusion rests on an assumption (returns, inflation, longevity, future law), state it in one line at the decision point — not as a closing disclaimer paragraph.
 7. **No predictions.** No market forecasts or performance promises. Monte Carlo success rates and safe-withdrawal figures are planning signals, not guarantees, and should be presented that way.
 8. **Default household lens** (confirm before results depend on it): married filing jointly, Washington resident, W-2 wages plus LLC self-employment income, minor children. Both employee-side and owner-side options are in scope by default.
+9. **Cite the controlling authority.** When a conclusion depends on a legal rule, name the authority (IRC/U.S.C./C.F.R. section, RCW/WAC, or agency issuance) from `references/authorities.md` and follow that file's retrieval protocol: pull current text before citing when the session has web access; label index-only citations as not re-verified. Never cite a section number that is neither in the map nor freshly retrieved. The purpose is conversational leverage — a client who walks in with the right section numbers and the right questions gets a better hour from the professional.
 
 ## Workflows
 
@@ -34,7 +35,7 @@ Limits, thresholds, deadlines, premiums → answer directly from the quick-refer
 5. End with a "take to your advisor" block: the decision to be made, the inputs used here, and the questions that would resolve it. Never end a routed topic with "do X."
 
 ### 4 — Advisor meeting prep
-Generate a one-page prep packet using `references/advisor-meetings.md`: ranked agenda topics, decisions pending with inputs gathered, a tailored question list (initial-meeting or annual-review bank), documents to bring, and changes since the last meeting. Chat text by default; a file on request.
+Generate a one-page prep packet using `references/advisor-meetings.md`: ranked agenda topics, decisions pending with inputs gathered, a tailored question list (initial-meeting or annual-review bank), documents to bring, changes since the last meeting, and the authorities in play for each pending decision (per `references/authorities.md`). Chat text by default; a file on request.
 
 ### 5 — Annual refresh
 Each November–December (the IRS/SSA/CMS release cycle) or on request, run the verification checklist in `references/guardrails.md`, update the quick-reference tables, clear resolved VERIFY flags, and re-date every file's "Last verified" line.
@@ -47,5 +48,6 @@ Each November–December (the IRS/SSA/CMS release cycle) or on request, run the 
 | `references/frameworks.md` | CFP 7-step process, readiness benchmarks, safe-withdrawal research, sequence risk, buckets, Monte Carlo, asset location, withdrawal sequencing, Roth conversion playbook, Social Security claiming, Medicare traps, HSA/backdoor/mega-backdoor/NUA/72(t), harvesting, charitable, insurance, cash | Methodology or strategy questions |
 | `references/washington.md` | WA capital-gains excise tax, WA estate tax (split-year 2026), community property, WA Cares | Any WA question on gains, estates, LTC, or marital property |
 | `references/business-owner.md` | 402(g)/415(c) coordination, Solo 401(k) vs SEP vs SIMPLE, DB/cash-balance, S-corp tradeoffs, QBI, succession | Self-employment or entity questions |
+| `references/authorities.md` | Primary-authority citation map (IRC, ERISA, U.S.C./C.F.R., RCW/WAC, agency guidance), retrieval protocol, and authority-to-question translation for professional meetings | Any conclusion that turns on a legal rule; every meeting-prep packet |
 | `references/advisor-meetings.md` | Fiduciary vs Reg BI, fee benchmarks, ADV/CRS, credentials, question banks, document checklist, red flags, prep-packet template | Advisor selection, evaluation, or meeting prep |
 | `references/guardrails.md` | Disclaimer language, hard-route list, figure-handling rules, refresh checklist, legislative watch list | Session start (rules); every refresh |

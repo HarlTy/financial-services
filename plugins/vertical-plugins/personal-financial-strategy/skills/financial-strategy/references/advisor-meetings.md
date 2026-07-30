@@ -53,4 +53,5 @@ One page, in this order:
 4. **Documents to bring**, filtered to the agenda.
 5. **Changes since last meeting** — income, entity, family, goals, account moves.
 6. **Figures verified this session**, each with its tax year and FINAL/VERIFY status.
+7. **Authorities in play** — one line per pending decision: the controlling statute or regulation, the fact pattern, and the confirmation question it generates for the CPA, attorney, or advisor (built per `references/authorities.md`).
 Deliver as chat text by default; as a file on request.

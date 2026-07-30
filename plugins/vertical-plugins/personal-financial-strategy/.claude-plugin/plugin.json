@@ -1,6 +1,6 @@
 {
   "name": "personal-financial-strategy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Client-side personal financial planning: retirement, tax, Washington-specific rules, business-owner plans, and advisor-meeting prep (educational)",
   "author": {
     "name": "Tyler Harlington"

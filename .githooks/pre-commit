@@ -10,9 +10,33 @@ set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 
-if ! command -v python3 >/dev/null 2>&1; then
-  echo "[pre-commit] python3 not found; skipping version-bump." >&2
-  exit 0
+# Resolve a Python 3 interpreter. Windows rarely exposes `python3` — installs
+# from python.org provide `python` plus the `py` launcher, and the Microsoft
+# Store build ships a `python3` stub that exits non-zero without running
+# anything. Probing `python3` alone therefore disabled this gate on every
+# managed Windows box. Each candidate is validated by executing real code, so
+# a non-functional stub is rejected rather than trusted.
+PY=""
+for candidate in "python3" "python" "py -3"; do
+  if command -v "${candidate%% *}" >/dev/null 2>&1 \
+    && $candidate -c "import sys; sys.exit(0 if sys.version_info >= (3, 8) else 1)" \
+      >/dev/null 2>&1; then
+    PY="$candidate"
+    break
+  fi
+done
+
+# A gate that fails open is worse than no gate: it reports success while
+# enforcing nothing, which is precisely how unbumped plugin versions reached
+# main. Missing interpreter is a hard failure, never a skip.
+if [ -z "$PY" ]; then
+  echo "[pre-commit] FATAL: no working Python 3 interpreter found." >&2
+  echo "[pre-commit] Tried: python3, python, py -3" >&2
+  echo "[pre-commit] The plugin version-bump gate cannot run, so this commit is" >&2
+  echo "[pre-commit] BLOCKED rather than silently skipped." >&2
+  echo "[pre-commit] Fix: install Python 3.8+ and ensure it is on PATH." >&2
+  echo "[pre-commit] Deliberate bypass: git commit --no-verify" >&2
+  exit 1
 fi
 
-python3 "$REPO_ROOT/scripts/version_bump.py" --apply
+$PY "$REPO_ROOT/scripts/version_bump.py" --apply

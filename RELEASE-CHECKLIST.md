@@ -41,7 +41,9 @@ machine runs.
 Non-optional. Two serving paths, so two actions — skip either and that audience
 silently keeps the old version:
 
-- [ ] **Merge** `state-modules` → `main`, and push `main`.
+- [ ] **Merge** `state-modules` → `main`, and push `main`. Pass the merge message
+      with `-F <file>`, not `-F -` — unlike `git commit`, `git merge` does not
+      read a message from stdin and fails with `could not read file '-'`.
 - [ ] **Marketplace:** `claude plugin marketplace update harlty-financial-services`
 - [ ] **Verify marketplace:** installed copy at `~/.claude/plugins/marketplaces/HarlTy-financial-services`
       is content-identical to `main`. Diff with `--strip-trailing-cr` — the clone
@@ -52,6 +54,46 @@ silently keeps the old version:
       not change, already-installed users receive nothing regardless of what you
       pushed. The pre-commit gate normally handles this (see
       [README](./README.md#plugin-versions-are-enforced-not-remembered)).
+- [ ] **Record it in the release log below** — version, date, `main` SHA, artifact
+      `sha256`, and what was uploaded or deliberately skipped, with the reason.
+
+## Release log
+
+One line per release. This exists because the `.skill` artifact carries no
+version marker of its own — `version` lives in `.claude-plugin/plugin.json`,
+which is not part of the skill package — so an uploaded skill cannot be
+identified by inspection. Until artifacts are self-identifying, this log is the
+external record that tells you which release a serving copy corresponds to.
+
+Two identifiers per entry, because they answer different questions:
+
+- **Skill tree** — the git tree object of the skill folder. Content-addressed and
+  reproducible anywhere, forever. This is what you verify *content* against.
+- **Artifact sha256** — the hash of the `.skill` bytes actually uploaded. Use it
+  to confirm a specific file is the one that went out. **Do not** expect a
+  rebuild to reproduce it: ZIP stores per-entry mtimes, so repackaging identical
+  content after a fresh clone yields a different hash (verified — same eight
+  files, mtimes shifted, hash changed completely). A mismatch here means
+  "different build", not "different content".
+
+```bash
+# content check -- reproducible, this is the authoritative one
+git rev-parse <main-sha>:plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy
+
+# identify a particular .skill file you have on disk
+sha256sum dist/financial-strategy.skill
+```
+
+- **0.2.0** — 2026-07-29 — `main` @ `88bbca4` — skill tree `f0e5d71d` —
+  `financial-strategy.skill` sha256
+  `0b2cdc36f275994144a2340d16284bd7905100670e2608d98afc456faf850d8c` —
+  **claude.ai upload: not performed**; serving copy verified content-identical
+  (skill folder unchanged `1055500` → `88bbca4`; app copy previously verified
+  byte-identical at `1055500`). Marketplace: verified at `88bbca4`, tree-object
+  match. The merge carried only repo-level files — checklist, hook, README,
+  CLAUDE.md, check.py, eval files — nothing inside the skill folder, whose tree
+  object is `f0e5d71d` at both commits. Content drift for this release: zero, so
+  a re-upload would have been a no-op.
 
 ### Why this list exists
 

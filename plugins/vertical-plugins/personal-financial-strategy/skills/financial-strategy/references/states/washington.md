@@ -29,7 +29,7 @@ Washington has **no state income tax on wages** — but three WA-specific regime
 - **Benefit:** up to $36,500 lifetime (inflation-adjusted), claimable from July 1, 2026.
 - **SB 5291 (2025; most provisions 1/1/2026):** out-of-state portability for vested contributors and expanded vesting pathways (10-year, or 3-of-last-6-years).
 - The original private-LTC-insurance opt-out window is closed (it required coverage in place before 11/1/2021).
-- **Planning note:** $36,500 is a partial offset, not long-term-care coverage. Real LTC exposure still warrants the traditional-vs-hybrid analysis in `frameworks.md`; product purchase remains a hard route.
+- **Planning note:** $36,500 is a partial offset, not long-term-care coverage. Real LTC exposure still warrants the traditional-vs-hybrid analysis in `../frameworks.md`; product purchase remains a hard route.
 
 ## Watch list (mirror in guardrails.md)
 - **ESSB 6346:** 9.9% WA tax on income over $1M, effective 2028 — a certified repeal initiative (I-645) is on the **November 3, 2026 ballot** and a constitutional challenge is pending. Treat as NOT settled; do not build plans that assume it either survives or dies.

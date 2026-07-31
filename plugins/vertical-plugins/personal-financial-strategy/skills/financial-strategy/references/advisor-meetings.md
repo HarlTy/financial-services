@@ -46,12 +46,15 @@ Latest tax returns · pay stubs and W-2s · LLC Schedule C or K-1 · all investm
 Won't confirm fiduciary status in writing · vague fee answers or headline-fee-only quotes · product pitches (annuities, insurance) before a written plan exists · no repeatable documented process · disciplinary history on BrokerCheck · performance promises · pressure and artificial urgency · reluctance to coordinate with your CPA or attorney.
 
 ## Meeting-prep packet (what this skill generates)
+
+**Sections 2, 5, and 6 depend on conversation history that a cold start does not have.** When the prompt is a bare "prep me" with no scenario, no figures, and no prior meeting, those three sections return as intake prompts or N/A — as specified inline below. An empty section is a correct packet; a fabricated one is worse than no packet, because the user carries invented numbers into a room with a professional. This is a rule, not a preference: do not synthesize plausible content to fill a heading.
+
 One page, in this order:
 1. **Agenda topics**, ranked by consequence.
-2. **Decisions pending**, each with the inputs already gathered in this conversation.
+2. **Decisions pending**, each with the inputs already gathered in this conversation. **If no inputs were gathered** — a cold "prep me" with no scenario worked — render this section as *intake prompts*: the inputs the user should bring, phrased as questions to themselves. Never invent balances, ages, income, or goals to populate it.
 3. **Tailored question list** drawn from the banks above (initial or annual as appropriate).
 4. **Documents to bring**, filtered to the agenda.
-5. **Changes since last meeting** — income, entity, family, goals, account moves.
-6. **Figures verified this session**, each with its tax year and FINAL/VERIFY status.
+5. **Changes since last meeting** — income, entity, family, goals, account moves. **If there is no prior meeting in this conversation**, write "N/A — first meeting" or list what to review since the last one, whichever fits. Never narrate changes that were not stated.
+6. **Figures verified this session**, each with its tax year and FINAL/VERIFY status. **If no figures were looked up this session**, say so — "none verified this session; figures below come from the reference tables at their stated tax year" — or return N/A. Never back-fill numbers to make the section look populated.
 7. **Authorities in play** — one line per pending decision: the controlling statute or regulation, the fact pattern, and the confirmation question it generates for the CPA, attorney, or advisor (built per `references/authorities.md`).
 Deliver as chat text by default; as a file on request.

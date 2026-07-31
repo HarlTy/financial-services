@@ -177,6 +177,121 @@ for p in json.loads(mp.read_text()).get("plugins", []):
     if not (src / ".claude-plugin" / "plugin.json").is_file():
         err(f"marketplace: {p['name']} source -> {p['source']} (no plugin.json)")
 
+# --- 4d. SKILL.md body version matches its plugin manifest -----------------
+# A plugin's version lives in .claude-plugin/plugin.json, which is NOT part of
+# the skill package -- so a packaged .skill or a serving copy cannot be
+# identified by inspection. A skill may opt in to a `Version:` line at the top
+# of its BODY (body, not frontmatter, so the skill validator's schema is
+# untouched) to close that gap. Two copies then have to agree.
+#
+# The version-bump gate validates plugin.json only, so this is the assertion
+# that closes the unguarded half. Conditional by design: a skill without the
+# line has not opted in, and requiring one would fail 119 files.
+#
+# Helpers are imported rather than duplicated -- version_bump.py is the single
+# source of truth for version mechanics, its main() is __name__-guarded so the
+# import has no side effects, and scripts/ is sys.path[0] when this runs.
+import version_bump  # noqa: E402
+
+for pj in sorted(PLUGINS.glob("*/*/.claude-plugin/plugin.json")):
+    try:
+        manifest_version = json.loads(pj.read_text()).get("version")
+    except json.JSONDecodeError:
+        continue  # already reported by step 2
+    for md in version_bump.skill_mds(version_bump.plugin_root(pj)):
+        checked += 1
+        declared = version_bump.read_skill_version(md)
+        if declared is None:
+            continue  # this skill has not opted in to a body version marker
+        if declared != manifest_version:
+            err(
+                f"skill-version: {rel(md)}: body says 'Version: {declared}' but "
+                f"{rel(pj)} says '{manifest_version}'. These two must move "
+                f"together -- run scripts/version_bump.py --apply to sync."
+            )
+
+# --- 4e. skill reference paths resolve --------------------------------------
+# Nothing else in this repo validates the `references/foo.md` paths written
+# inside a skill, so moving a reference file silently breaks every mention of
+# it. That is exactly what the state-modules restructure did to washington.md
+# across six files, none of which any gate caught.
+#
+# TWO PATH CONVENTIONS, both live and both accepted: SKILL.md writes
+# skill-root-relative (`references/authorities.md`) while files inside
+# references/ write bare-sibling (`frameworks.md`). A token passes if it
+# resolves against its own file's parent OR against the skill root. Forcing one
+# style would churn files that are not broken; accepting both still catches the
+# whole target class, since a stale path fails under both.
+#
+# REPO-INTERNAL ONLY. Tokens must end in .md, and anything carrying a URL
+# scheme is skipped outright. This check makes NO network calls, so the
+# authorities tables' source columns (app.leg.wa.gov, dor.wa.gov,
+# oregonlegislature.gov, portland.gov) cannot fail it.
+#
+# PLANNED-REFERENCE CONVENTION: backticks or markdown-link syntax means "must
+# resolve now"; a path written in plain prose may name a file that does not
+# exist yet. That is how a module's forward reference to an unbuilt sibling
+# (mirror: states/oregon.md) stays legible without tripping this gate, and how
+# a template shows a deliberately-wrong example path. The convention costs
+# nothing to enforce because the token pattern below only ever sees backticked
+# and linked paths -- plain prose is invisible to it, so the input filter IS
+# the exemption mechanism.
+MD_REF_RE = re.compile(r"`([^`\n]+?\.md)`|\]\(([^)\s]+?\.md)\)")
+
+# Enforced (fails the check) only for plugins that have adopted the convention;
+# elsewhere findings are counted and reported. Five unrelated plugins carry
+# pre-existing unresolved references, and a gate that fails on arrival across
+# the whole repo blocks every commit -- which gets the gate deleted rather than
+# the references fixed. The count is printed rather than dropped so the debt
+# stays visible: silence would read as "everything resolves." Add a plugin here
+# once its references resolve.
+SKILL_REF_ENFORCED = {"personal-financial-strategy"}
+skill_ref_unenforced = 0
+
+for skill_md in sorted(PLUGINS.glob("*/*/skills/*/SKILL.md")):
+    skill_dir = skill_md.parent
+    enforced = skill_md.parents[2].name in SKILL_REF_ENFORCED
+    for doc in sorted(skill_dir.rglob("*.md")):
+        checked += 1
+        try:
+            text = doc.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError) as e:
+            # Explicit UTF-8, unlike this file's other bare read_text() calls:
+            # the Windows default is cp1252, under which 20 SKILL.md files in
+            # this repo raise. A bare read here would traceback instead of
+            # producing a clean FAIL.
+            err(f"skill-ref: {rel(doc)}: not readable as UTF-8: {e}")
+            continue
+        for m in MD_REF_RE.finditer(text):
+            tok = m.group(1) or m.group(2)
+            # Not repo-internal, or not a reference at all:
+            #   - URL schemes -- never fetched; this check makes no network calls
+            #   - absolute paths (/mnt/skills/public/...) -- runtime-supplied
+            #     skills that live outside the repo entirely
+            #   - bracketed templates ([Company]_Report_[Date].md) -- output
+            #     filenames a skill GENERATES, not files it reads
+            if "://" in tok or tok.startswith(("http", "mailto:", "#", "/")):
+                continue
+            if "[" in tok or "]" in tok or "<" in tok:
+                continue
+            if (doc.parent / tok).is_file() or (skill_dir / tok).is_file():
+                continue
+            if not enforced:
+                skill_ref_unenforced += 1
+                continue
+            err(
+                f"skill-ref: {rel(doc)}: `{tok}` does not resolve (tried it "
+                f"relative to the file and to the skill root). If the file is "
+                f"planned but unbuilt, write the path in plain prose instead "
+                f"of backticks."
+            )
+
+if skill_ref_unenforced:
+    print(
+        f"note: {skill_ref_unenforced} unresolved skill reference(s) in plugins "
+        f"outside SKILL_REF_ENFORCED (pre-existing; not failing the check)."
+    )
+
 # --- 5. required files per managed-agent -----------------------------------
 for d in sorted(MANAGED.iterdir()):
     if not d.is_dir():

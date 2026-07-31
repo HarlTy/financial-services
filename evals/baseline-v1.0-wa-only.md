@@ -208,3 +208,29 @@ against it, and any case dropping to FAIL is a genuine regression. It should not
 read as evidence that the skill is 100% reliable. Strengthening options, in
 descending value: an independent grader session; N=3 resampling per case; and
 adversarial cases written to *target* the flags (G2 is the first candidate).
+
+## Errata
+
+Added 2026-07-29, during the Phase 0 state-modules refactor. **The baseline body
+above this section is frozen** — including its file paths, which the refactor
+moves. `washington.md` is now `states/washington.md`; the citations at lines 172
+and 187 are deliberately left as written, because this file records pre-refactor
+behavior and is not a live reference.
+
+**E1 — G1 delta corrected.** The two defensible readings of the surcharge
+threshold (measured post- vs pre-deduction) differ by 2.9% × $278,000 =
+**$8,062** on the Case 2 facts, not the "roughly $27,500" recorded at line 176.
+$27,522 is 9.9% × $278,000 — which corresponds to dropping the standard
+deduction entirely, not to either reading of the *threshold*. That is not a
+defensible construction of RCW 82.87.020's definitional chain, so it never
+bounded the ambiguity. The real exposure was roughly a third of what the gap
+note claimed.
+
+**E2 — G1 resolved against the enrolled bill.** ESSB 5813 sec. 101 amends
+RCW 82.87.040 to impose (1)(a) 7% × an individual's Washington capital gains,
+and (1)(b) an additional 2.90% × the portion of Washington capital gains
+exceeding $1,000,000. "Washington capital gains" is the post-deduction defined
+term (RCW 82.87.020), so the $1M surcharge threshold is measured **after** the
+standard deduction. Case 2's $82,078 embodies the correct reading; the verdict
+is unaffected. The refactor writes these mechanics explicitly into the state
+module, so the ambiguity cannot be re-derived from the rate line alone.

@@ -68,7 +68,7 @@ Donor-advised funds (bunch several years of giving into one itemizing year; fund
 - **Life:** replace income through the dependency years plus debts and education funding; term insurance for the need window; permanent insurance only for permanent needs (estate liquidity, special-needs planning). Product purchase is a hard route.
 - **Disability:** protects the largest asset (remaining lifetime earnings); prefer own-occupation definitions.
 - **Umbrella:** liability coverage at least at net-worth scale, layered above auto/home limits.
-- **Long-term care:** traditional vs hybrid (life/LTC) tradeoffs; for WA residents, net the WA Cares benefit (~$36,500 lifetime) against the real exposure — it is a partial offset, not coverage (see `washington.md`).
+- **Long-term care:** traditional vs hybrid (life/LTC) tradeoffs; for WA residents, net the WA Cares benefit (~$36,500 lifetime) against the real exposure — it is a partial offset, not coverage (see `states/washington.md`).
 
 ## Cash and emergency funds
 3–6 months of essential spending as the norm; size toward the top or beyond with variable or self-employment income (the default household here has both W-2 and SE income). Hold in HYSA/money market/T-bills as its own bucket outside the investment allocation.

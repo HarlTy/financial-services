@@ -62,7 +62,7 @@ Last verified: 2026-07-28 (deep research pass against primary and reputable seco
 |---|---|---|
 | Federal estate/gift/GST exemption | $15,000,000 per person ($30M per couple); indexed after 2026; top rate 40% | FINAL |
 | Annual gift exclusion | $19,000 per donee | VERIFY (reported unchanged from 2025; confirm Rev. Proc. 2025-32) |
-| Portability | Federal: yes (timely Form 706). Washington: NO — see `washington.md` | FINAL |
+| Portability | Federal: yes (timely Form 706). Washington: NO — see `states/washington.md` | FINAL |
 
 ## Social Security — 2026 (SSA)
 

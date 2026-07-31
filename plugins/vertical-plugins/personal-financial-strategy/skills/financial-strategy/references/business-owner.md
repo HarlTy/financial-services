@@ -31,7 +31,7 @@ Consulting is a **specified service trade or business (SSTB)**. The 20% deductio
 
 ## Washington notes
 - LLC self-employment income is exempt from WA Cares unless the owner opts in.
-- The LLC is disregarded for the WA capital-gains excise tax — gains land on the owner's return (see `washington.md`).
+- The LLC is disregarded for the WA capital-gains excise tax — gains land on the owner's return (see `states/washington.md`).
 - A business interest acquired during marriage is presumptively community property — it matters for both estate math and any future sale.
 
 ## Succession / exit basics

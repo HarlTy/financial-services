@@ -5,10 +5,41 @@ Last verified: 2026-07-28. **This file is a finding aid, not an authority.** Its
 ## Retrieval protocol
 
 - **Hierarchy when sources disagree:** constitution/statute → regulations → agency guidance (Rev. Rul., Rev. Proc., Notices; CMS rules; SSA POMS; WA DOR ETAs and Special Notices) → publications, instructions, and FAQs (persuasive only, not authority). Say which level a rule comes from whenever the distinction could matter.
-- **When a conclusion turns on a legal rule and the session has web access:** retrieve the current text from the official source below before citing, and append the retrieval date. When there is no retrieval tool, cite from this map and label it "citation from index — text not re-verified this session."
-- **Anti-fabrication gate:** never cite a section number that is neither in this map nor freshly retrieved. If the map lacks the needed authority, retrieve first, cite second, and add it to the map at the next refresh.
+- **When a conclusion turns on a legal rule and the session has web access:** retrieve the current text from the official source below before citing, and append the retrieval date.
+- **Canonical index-only label (single source of truth).** When any cited authority was not re-verified against current text this session, end the citation block — or the response, if citations are inline — with this text **verbatim**:
+
+  > Citations from this skill's index — text not re-verified this session.
+
+  Do not paraphrase or shorten it. It is stored here and nowhere else so the wording cannot drift between the skill, the rubric, and the answers. Retrieved citations are the exception, and they carry their retrieval date individually; one index-only citation anywhere in the response triggers the label.
+- **Anti-fabrication gate:** never cite a section number that is neither in this map, nor in the skill's own reference tables (which carry their own source citations), nor freshly retrieved. If the needed authority is in none of those places, retrieve first, cite second, and add it to the map at the next refresh.
 - **Litigation posture** (e.g., the challenge to Washington's ESSB 6346) is a moving target: if a docket/case-law tool (such as a CourtListener connector) is available in the session, check it; otherwise state the last-verified posture with its date.
 - **Quoting:** paraphrase the operative rule and pin-cite; quote at most a sentence or two even though statutes are public domain — precision and context economy both favor paraphrase.
+
+### Oregon source slate — Phase 1 input
+
+**Not yet researched.** This is a retrieval slate handed forward to the Oregon
+module build, not a citation map: nothing below has been confirmed against
+primary text in this session, and no figure here may be used in an answer. It is
+recorded so the Phase 1 build starts from a scoped source list rather than a
+search.
+
+- **Statutes:** ORS ch. 316 (income) and ch. 118 (estate) at
+  oregonlegislature.gov/bills_laws/ors/. Note ch. 118 was amended by 2025 c.577
+  and c.595 — including ORS 118.145, a natural-resource exemption with a $15M cap.
+- **Oregon DOR:** income, estate (OR-706), and the kicker.
+- **Portland Revenue Division:** portland.gov/revenue/personal-tax — administers
+  both Metro SHS and Multnomah PFA.
+- **Multnomah County Code ch. 11 (PFA):** rate-increase delay to 1/1/2027; TY2026
+  estimated-payment threshold moving $1,000 → $5,000.
+- **Metro Code (SHS):** June 2025 changes; TY2026+ threshold inflation-indexing.
+  **PFA thresholds are NOT indexed** — the two programs diverge here, so do not
+  reason about one from the other.
+- **OregonSaves** program rules.
+
+Watch list to resolve at build: 2025 estate bills HB 2058, HB 2112, HB 2301,
+HB 2362, HB 3737, and SB 380, SB 405, SB 648, SB 764 — disposition of each to be
+recorded when the module is written. PFA 0.8% rate increase effective 1/1/2027 is
+a pre-positioned VERIFY for the TY2027 refresh.
 
 ## Official current-text sources
 
@@ -26,6 +57,13 @@ Last verified: 2026-07-28. **This file is a finding aid, not an authority.** Its
 | Convenience mirror only | law.cornell.edu (never cite as the source of truth) |
 
 ## Citation map by domain
+
+**Federal only.** State authorities live in the state's own module under
+`states/` — same two-column schema, so a state table and a federal table read the
+same way and concatenate into a meeting-prep packet without reformatting. For
+Washington, see `states/washington.md` §7. The retrieval endpoints above stay
+here, because finding the current text is a retrieval concern rather than a
+jurisdictional one.
 
 ### Retirement accounts and plans
 | Topic | Controlling authority |
@@ -93,16 +131,6 @@ Last verified: 2026-07-28. **This file is a finding aid, not an authority.** Its
 | Adviser fiduciary duty | Investment Advisers Act of 1940, 15 U.S.C. §80b-1 et seq. (antifraud basis §80b-6); SEC Commission Interpretation Regarding Standard of Conduct for Investment Advisers (2019) |
 | Broker standard | Regulation Best Interest, 17 C.F.R. §240.15l-1 |
 | Disclosures | Form ADV Part 2 and Form CRS (SEC rules — pin cites VERIFY); adviserinfo.sec.gov; brokercheck.finra.org |
-
-### Washington State
-| Topic | Controlling authority |
-|---|---|
-| Capital-gains excise tax | RCW 82.87; ESSB 5813 (2025); DOR guidance; *Quinn v. State* (Wash. 2023) upheld the tax as an excise — reporter pin cite VERIFY |
-| Estate tax | RCW 83.100; ESSB 5813 (2025); ESB 6347 (2026); WAC 458-57 (VERIFY chapter) |
-| Community property; community property agreements | RCW 26.16; RCW 26.16.120 |
-| Probate, trusts, and dispute resolution | Title 11 RCW; TEDRA, RCW 11.96A |
-| WA Cares / LTSS Trust | RCW 50B.04; SB 5291 (2025) |
-| Pending: high-earner income tax (eff. 2028) | ESSB 6346 (2026); repeal initiative I-645 (Nov. 3, 2026 ballot); constitutional challenge pending against the backdrop of Wash. Const. art. VII (uniformity) — treat as unsettled |
 
 ## Authority → conversation
 

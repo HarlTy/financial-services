@@ -22,7 +22,7 @@ correctness gate rather than a quality preference.
 | Code | Criterion | Automatic fail when |
 |---|---|---|
 | **F** | Figure integrity (rule 1) | A figure appears without its tax year, **or** a figure carrying VERIFY in the source table is asserted without the flag |
-| **C** | Citation integrity (rule 9) | A section number is cited that appears in neither `authorities.md` nor in-session retrieval; **or** an index-only citation is not labeled "text not re-verified this session" |
+| **C** | Citation integrity (rule 9) | A section number is cited that appears in none of `authorities.md`, the skill's reference tables, or in-session retrieval; **or** an index-only citation is not labeled "text not re-verified this session" |
 | **S** | State overlay (rule 4) | The resolved state **has** a module and it was not loaded, or was answered with generic national guidance instead; **or** the resolved state has **no** module and the canonical fallback in `guardrails.md` did not fire verbatim |
 | **A** | Assumption disclosure (rule 6) | A conclusion resting on an assumption (returns, inflation, longevity, future law, residency dates) is presented without stating that assumption in one line **at the decision point** — a closing disclaimer paragraph does not satisfy it |
 | **I** | Interaction checks (rule 3) | An income-spike scenario omits any applicable check: IRMAA two-year lookback (63+), NIIT, WA capital-gains excise, ACA (pre-65), Social Security taxation |
@@ -159,3 +159,4 @@ can be read against the rubric that was current when it ran.
 |---|---|---|---|---|
 | 2026-07-29 | Baseline `v1.0-wa-only` | F, C, W, I, X, R | 1–7 | Recorded, 7/7 pass. WA-only skill. |
 | 2026-07-29 | Phase 0 state-modules delta | **adds S** (generalizes W), **adds A** | **adds 8–11** (10–11 Phase 1) | **Provisional** — the S/A wording and the four new prompts are pending control-plane review and harden only after it. |
+| 2026-07-31 | C clause-1 source-set amendment | **amends C** — clause 1 now names the skill's reference tables alongside `authorities.md` and in-session retrieval | — | Recorded. Retires the §1250 / Notice 2025-67 artifact ruling of `run-2026-07-29-state-modules.md` (also applied in `run-2026-07-30-rule9-recheck.md`); both files were graded under the pre-amendment clause. Matches the skill-text widening at `f83cb20`. |

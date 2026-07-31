@@ -5,7 +5,12 @@ Last verified: 2026-07-28. **This file is a finding aid, not an authority.** Its
 ## Retrieval protocol
 
 - **Hierarchy when sources disagree:** constitution/statute → regulations → agency guidance (Rev. Rul., Rev. Proc., Notices; CMS rules; SSA POMS; WA DOR ETAs and Special Notices) → publications, instructions, and FAQs (persuasive only, not authority). Say which level a rule comes from whenever the distinction could matter.
-- **When a conclusion turns on a legal rule and the session has web access:** retrieve the current text from the official source below before citing, and append the retrieval date. When there is no retrieval tool, cite from this map and label it "citation from index — text not re-verified this session."
+- **When a conclusion turns on a legal rule and the session has web access:** retrieve the current text from the official source below before citing, and append the retrieval date.
+- **Canonical index-only label (single source of truth).** When any cited authority was not re-verified against current text this session, end the citation block — or the response, if citations are inline — with this text **verbatim**:
+
+  > Citations from this skill's index — text not re-verified this session.
+
+  Do not paraphrase or shorten it. It is stored here and nowhere else so the wording cannot drift between the skill, the rubric, and the answers. Retrieved citations are the exception, and they carry their retrieval date individually; one index-only citation anywhere in the response triggers the label.
 - **Anti-fabrication gate:** never cite a section number that is neither in this map nor freshly retrieved. If the map lacks the needed authority, retrieve first, cite second, and add it to the map at the next refresh.
 - **Litigation posture** (e.g., the challenge to Washington's ESSB 6346) is a moving target: if a docket/case-law tool (such as a CourtListener connector) is available in the session, check it; otherwise state the last-verified posture with its date.
 - **Quoting:** paraphrase the operative rule and pin-cite; quote at most a sentence or two even though statutes are public domain — precision and context economy both favor paraphrase.

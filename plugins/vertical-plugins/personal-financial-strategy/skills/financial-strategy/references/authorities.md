@@ -11,7 +11,7 @@ Last verified: 2026-07-28. **This file is a finding aid, not an authority.** Its
   > Citations from this skill's index — text not re-verified this session.
 
   Do not paraphrase or shorten it. It is stored here and nowhere else so the wording cannot drift between the skill, the rubric, and the answers. Retrieved citations are the exception, and they carry their retrieval date individually; one index-only citation anywhere in the response triggers the label.
-- **Anti-fabrication gate:** never cite a section number that is neither in this map nor freshly retrieved. If the map lacks the needed authority, retrieve first, cite second, and add it to the map at the next refresh.
+- **Anti-fabrication gate:** never cite a section number that is neither in this map, nor in the skill's own reference tables (which carry their own source citations), nor freshly retrieved. If the needed authority is in none of those places, retrieve first, cite second, and add it to the map at the next refresh.
 - **Litigation posture** (e.g., the challenge to Washington's ESSB 6346) is a moving target: if a docket/case-law tool (such as a CourtListener connector) is available in the session, check it; otherwise state the last-verified posture with its date.
 - **Quoting:** paraphrase the operative rule and pin-cite; quote at most a sentence or two even though statutes are public domain — precision and context economy both favor paraphrase.
 

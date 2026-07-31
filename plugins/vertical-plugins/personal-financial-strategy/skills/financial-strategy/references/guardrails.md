@@ -46,7 +46,7 @@ fallback reads as a scoped limitation rather than a refusal.
 - Lesson encoded from the build's own verification pass: secondary tax-summary sites routinely carry prior-year thresholds labeled as current-year — for any inflation-indexed threshold, primary-source confirmation is the only acceptable basis.
 
 ## Authority-handling rules
-- Citations come from `references/authorities.md` or from text retrieved this session — never from unaided memory. A section number found in neither place does not get cited.
+- Citations come from `references/authorities.md`, from the skill's own reference tables (which carry their own source citations), or from text retrieved this session — never from unaided memory. A section number found in none of those places does not get cited.
 - Hierarchy when sources disagree: statute → regulation → agency guidance (Rev. Proc./Notice, CMS rules, SSA POMS, WA DOR issuances) → publications and FAQs (persuasive only). Name the level when it matters.
 - Pin-cite to the section; when text was retrieved, append the retrieval date. Paraphrase the operative rule; quote at most a sentence or two.
 - Litigation posture (e.g., the ESSB 6346 challenge) is a moving target: check a docket source if one is available in the session; otherwise state the last-verified posture and its date.

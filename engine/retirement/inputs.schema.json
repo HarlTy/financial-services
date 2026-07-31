@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HarlTy/financial-services/engine/retirement/inputs.schema.json",
+  "title": "Personal and model inputs (plane 2)",
+  "description": "Everything the engine needs that is NOT a legal parameter: balances, birth year, contribution split, and the model assumptions (returns, inflation, indexation, withdrawal settings). A real household's values belong in inputs.local.json, which .gitignore excludes by the pattern /engine/retirement/*.local.json. The committed inputs.example.json carries owner-attested fictitious values so the identity test is reproducible from the committed tree alone. Nothing in this file is a legal parameter: indexation rates here are ASSUMPTIONS about how indexed figures move, not the figures themselves.",
+  "type": "object",
+  "required": ["person", "household", "timeline", "balances", "contributions",
+               "assumptions", "swr", "gap"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "_note": { "type": "string" },
+    "_attestation": { "type": "string" },
+
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["birth_year"],
+      "properties": {
+        "birth_year": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+      }
+    },
+
+    "household": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["filing_status"],
+      "properties": {
+        "filing_status": {
+          "enum": ["MFJ", "Single"],
+          "description": "Drives the IRMAA threshold selection. Matches the workbook's data-validation list."
+        }
+      }
+    },
+
+    "timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_start_year", "retirement_age", "draw_start_year", "model_end_year"],
+      "properties": {
+        "model_start_year": { "type": "integer" },
+        "retirement_age": { "type": "integer" },
+        "draw_start_year": { "type": "integer" },
+        "model_end_year": { "type": "integer" }
+      }
+    },
+
+    "balances": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["taxable", "tax_deferred", "roth"],
+      "description": "Opening balances at the start of the model start year.",
+      "properties": {
+        "taxable": { "type": "number", "minimum": 0 },
+        "tax_deferred": { "type": "number", "minimum": 0 },
+        "roth": { "type": "number", "minimum": 0 }
+      }
+    },
+
+    "contributions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["employee_deferral_start", "employer_contribution_start", "destination"],
+      "properties": {
+        "employee_deferral_start": { "type": "number", "minimum": 0 },
+        "employer_contribution_start": { "type": "number", "minimum": 0 },
+        "destination": { "type": "string" }
+      }
+    },
+
+    "assumptions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nominal_return", "inflation", "contribution_escalation",
+                   "limit_indexation", "irmaa_indexation",
+                   "wa_deduction_indexation", "gain_fraction"],
+      "properties": {
+        "nominal_return": { "type": "number" },
+        "inflation": { "type": "number" },
+        "contribution_escalation": { "type": "number" },
+        "limit_indexation": {
+          "type": "number",
+          "description": "ASSUMPTION about how statutory limits move. Real limits index in steps; modelled as smooth growth."
+        },
+        "irmaa_indexation": { "type": "number", "description": "ASSUMPTION." },
+        "wa_deduction_indexation": {
+          "type": "number",
+          "description": "ASSUMPTION. Used to project past the last published WA capital-gains standard deduction, whose validity end the parameter layer reports explicitly."
+        },
+        "gain_fraction": {
+          "type": "number", "minimum": 0, "maximum": 1,
+          "description": "ASSUMPTION: share of each taxable-bucket withdrawal that is realised long-term gain."
+        }
+      }
+    },
+
+    "swr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "initial_rate", "guardrail_band",
+                   "guardrail_adjustment", "legacy_flat_draw"],
+      "properties": {
+        "method": { "enum": ["Fixed", "Guardrails"] },
+        "initial_rate": { "type": "number" },
+        "guardrail_band": { "type": "number" },
+        "guardrail_adjustment": { "type": "number" },
+        "legacy_flat_draw": {
+          "type": "number",
+          "description": "Reference only -- the prior model's flat nominal draw, kept for comparison. Drives no calculation."
+        }
+      }
+    },
+
+    "gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scenario", "roth_conversion_per_year", "conversion_tax_rate",
+                   "other_magi_income"],
+      "properties": {
+        "scenario": { "enum": ["A", "B", "C"] },
+        "roth_conversion_per_year": { "type": "number", "minimum": 0 },
+        "conversion_tax_rate": { "type": "number" },
+        "other_magi_income": { "type": "number" }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "inputs.schema.json",
+  "_attestation": "Owner-attested FICTITIOUS example values, attested 2026-07-31. These mirror the reference engine's embedded values verbatim so the identity test is reproducible from the committed tree alone. A real household's inputs belong in inputs.local.json, which .gitignore excludes by the pattern /engine/retirement/*.local.json -- they must never be committed to this public repo.",
+  "_note": "Nothing here is a legal parameter. The indexation rates are assumptions about how indexed figures move, not the figures themselves; those live in parameters.json with citations and validity windows.",
+
+  "person": {
+    "birth_year": 1987
+  },
+
+  "household": {
+    "filing_status": "MFJ"
+  },
+
+  "timeline": {
+    "model_start_year": 2026,
+    "retirement_age": 65,
+    "draw_start_year": 2061,
+    "model_end_year": 2085
+  },
+
+  "balances": {
+    "taxable": 44594.68,
+    "tax_deferred": 178740,
+    "roth": 36506
+  },
+
+  "contributions": {
+    "employee_deferral_start": 18000,
+    "employer_contribution_start": 7500,
+    "destination": "Tax-deferred"
+  },
+
+  "assumptions": {
+    "nominal_return": 0.065,
+    "inflation": 0.03,
+    "contribution_escalation": 0.03,
+    "limit_indexation": 0.025,
+    "irmaa_indexation": 0.025,
+    "wa_deduction_indexation": 0.025,
+    "gain_fraction": 0.50
+  },
+
+  "swr": {
+    "method": "Fixed",
+    "initial_rate": 0.04,
+    "guardrail_band": 0.20,
+    "guardrail_adjustment": 0.10,
+    "legacy_flat_draw": 425000
+  },
+
+  "gap": {
+    "scenario": "A",
+    "roth_conversion_per_year": 100000,
+    "conversion_tax_rate": 0.22,
+    "other_magi_income": 30000
+  }
+}

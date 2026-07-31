@@ -1,0 +1,27 @@
+source_url: https://www.federalregister.gov/documents/full_text/text/2020/11/12/2020-24723.txt
+metadata_source_url: https://www.federalregister.gov/api/v1/documents/2020-24723.json
+authority: T.D. 9930, "Updated Life Expectancy and Distribution Period Tables
+           Used for Purposes of Determining Minimum Required Distributions",
+           85 FR 72472 (Nov. 12, 2020)
+retrieved_at: 2026-07-31
+hash_scope: tool_extracted_text
+---
+Federal Register metadata (verbatim from the API):
+  title: "Updated Life Expectancy and Distribution Period Tables Used for
+          Purposes of Determining Minimum Required Distributions"
+  citation: "85 FR 72472"
+  publication_date: "2020-11-12"
+  effective_on: "2020-11-12"
+  action: "Final regulation."
+  docket_ids: ["TD 9930"]
+  dates: "Effective Date: The final regulations contained in this document are
+          effective on November 12, 2020."
+
+Applicability date, from the DATES section of the full text:
+"Applicability Date: The final regulations in this document apply to
+distribution calendar years (as defined in Sec. 1.401(a)(9)-5, Q&A-1(b)),
+beginning on or after January 1, 2022."
+
+From the preamble:
+"The life expectancy tables and Uniform Lifetime Table under these regulations
+apply for distribution calendar years beginning on or after January 1, 2022."

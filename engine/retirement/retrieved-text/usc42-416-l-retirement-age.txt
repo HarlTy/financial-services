@@ -1,0 +1,16 @@
+source_url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section416&num=0&edition=prelim
+authority: 42 U.S.C. Sec. 416(l)(1)(E) and Sec. 416(l)(2)
+retrieved_at: 2026-07-31
+hash_scope: tool_extracted_text
+note: Two retrievals against the same source, combined. The delayed-retirement
+      credit end age (42 U.S.C. Sec. 402(w)) was NOT retrieved -- sec. 402
+      truncates at subsection (s). Queued for backfill.
+---
+Sec. 416(l)(1)(E), retirement age:
+"with respect to an individual who attains early retirement age after
+December 31, 2021, 67 years of age."
+
+Sec. 416(l)(2), early retirement age:
+"The term 'early retirement age' means age 62 in the case of an old-age, wife's,
+or husband's insurance benefit, and age 60 in the case of a widow's or widower's
+insurance benefit."

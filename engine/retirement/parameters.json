@@ -1,0 +1,2182 @@
+{
+  "schema_version": "0.1.0",
+  "generated_note": "Plane 1 of the parameter layer. Every value is transcribed from the reference engine; every citation is primary authority. Records are never edited -- a correction is a NEW record carrying correction_of. No record here has been signed off by a human: see verification.status.",
+  "records": [
+    {
+      "parameter_id": "us.irc.402g.elective_deferral",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRS Notice 2025-67 (2026 cost-of-living adjustments for retirement plans); IRC Sec. 402(g)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Shared across ALL employers, unlike the Sec. 415(c) limit.",
+        "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 24500,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Elective deferral limit for 401(k)/403(b)/457(b)/TSP."
+      }
+    },
+    {
+      "parameter_id": "us.irc.414v.catchup_50plus",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRS Notice 2025-67 (2026 cost-of-living adjustments for retirement plans); IRC Sec. 414(v)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "pin_status": "IRC Sec. 414(v) verified at section level against the repo authority map; the subsection pin was not retrieved this session.",
+        "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 8000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Catch-up contribution available from age 50."
+      }
+    },
+    {
+      "parameter_id": "us.irc.414v.catchup_60_63",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRS Notice 2025-67 (2026 cost-of-living adjustments for retirement plans); IRC Sec. 414(v)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "pin_status": "IRC Sec. 414(v) verified at section level against the repo authority map; the subsection pin was not retrieved this session.",
+        "authority_note": "Replaces the age-50 catch-up in the years it applies.",
+        "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 11250,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Enhanced catch-up for ages 60 through 63."
+      }
+    },
+    {
+      "parameter_id": "us.irc.415c.annual_additions",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRS Notice 2025-67 (2026 cost-of-living adjustments for retirement plans); IRC Sec. 415(c)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Applies SEPARATELY per unrelated employer.",
+        "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 72000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Defined-contribution annual additions limit (employee + employer)."
+      }
+    },
+    {
+      "parameter_id": "us.irc.414v.catchup_age_rule",
+      "jurisdiction": "us",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRC Sec. 414(v)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "unretrieved",
+        "pin_status": "IRC Sec. 414(v) verified at section level against the repo authority map; the subsection pin was not retrieved this session.",
+        "backfill": "Retrieve IRC Sec. 414(v) text, its subsection pins, and the effective date of the age 60-63 catch-up; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "rule",
+        "expression": "60 <= age <= 63 -> catchup_60_63; age >= 50 -> catchup_50plus; otherwise 0",
+        "inputs": [
+          "age"
+        ],
+        "description": "The age-based catch-up available in a contribution year: the enhanced catch-up applies for ages 60 through 63 and replaces the age-50 catch-up in those years; the age-50 catch-up applies from age 50 otherwise."
+      }
+    },
+    {
+      "parameter_id": "us.secure2.603.roth_catchup_wage_threshold",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "SECURE 2.0 Act of 2022 Sec. 603; IRC Sec. 402A",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "pin_status": "Cited at section level from the repo authority map; no subsection pin retrieved this session.",
+        "authority_note": "Per-employer test on prior-year FICA wages (Form W-2 box 3). Applies to 401(k)/403(b)/457(b); not SEP or SIMPLE IRAs.",
+        "backfill": "Retrieve SECURE 2.0 Sec. 603 text and pin; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 150000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Prior-year FICA wages from an employer above which that employer's catch-up contributions must be Roth."
+      }
+    },
+    {
+      "parameter_id": "us.medicare.irmaa.tier1_threshold.mfj",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "CMS 2026 Medicare Parts A & B premiums and deductibles fact sheet (Nov. 14, 2025); 42 U.S.C. Sec. 1395r(i)",
+        "source_url": "https://www.cms.gov/newsroom",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Assessed PER PERSON on a two-year lookback; each tier is a CLIFF -- one dollar over triggers the full surcharge. The first four tiers are indexed; the fifth is frozen until 2028.",
+        "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 218000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "MAGI at which the first IRMAA tier begins, married filing jointly."
+      }
+    },
+    {
+      "parameter_id": "us.medicare.irmaa.tier1_threshold.single",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "CMS 2026 Medicare Parts A & B premiums and deductibles fact sheet (Nov. 14, 2025); 42 U.S.C. Sec. 1395r(i)",
+        "source_url": "https://www.cms.gov/newsroom",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Assessed PER PERSON on a two-year lookback; each tier is a CLIFF -- one dollar over triggers the full surcharge. The first four tiers are indexed; the fifth is frozen until 2028.",
+        "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 109000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "MAGI at which the first IRMAA tier begins, single."
+      }
+    },
+    {
+      "parameter_id": "us.medicare.irmaa.lookback_years",
+      "jurisdiction": "us",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "42 U.S.C. Sec. 1395r(i)(4)(B)(i)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section1395r&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "1678dd7ca4c9198a5ea4a05cec7993da8a7ec77bfc8d6966b75c382e57d48b2e",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/usc42-1395r-i-irmaa-lookback.txt",
+        "valid_from_basis": "unretrieved",
+        "authority_note": "Retrieved verbatim: modified adjusted gross income is determined \"for the individual's last taxable year beginning in the second calendar year preceding the year involved.\" So a surcharge assessed for year Y rests on year Y-2 income.",
+        "backfill": "Effective date of 42 U.S.C. Sec. 1395r(i)(4)(B)(i); raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 2,
+        "unit": "years",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Lookback from the coverage year to the taxable year whose MAGI sets the tier."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.excise_rate_base",
+      "jurisdiction": "us-wa",
+      "valid_from": "2025-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 82.87.040(1)(a), as amended by ESSB 5813 (2025) Sec. 101",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "\"Washington capital gains\" is a defined term (RCW 82.87.020, allocation under RCW 82.87.060): long-term gain allocated to Washington, NET of the standard deduction. Both charges operate on that same post-deduction figure.",
+        "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 0.07,
+        "unit": "rate",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Base excise rate on an individual's Washington capital gains."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.excise_rate_surcharge",
+      "jurisdiction": "us-wa",
+      "valid_from": "2025-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 82.87.040(1)(b), as amended by ESSB 5813 (2025) Sec. 101",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Additional charge on the portion of Washington capital gains above the surcharge threshold. 7% + 2.90% = 9.9% on the excess is the arithmetically identical bracket phrasing.",
+        "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 0.029,
+        "unit": "rate",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Additional excise rate above the surcharge threshold."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.surcharge_threshold",
+      "jurisdiction": "us-wa",
+      "valid_from": "2025-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 82.87.040(1)(b); defined term at RCW 82.87.020",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Measured AFTER the standard deduction, on the defined term, not on gross gain. NOT indexed.",
+        "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 1000000,
+        "unit": "usd",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Amount of Washington capital gains above which the surcharge applies."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.standard_deduction",
+      "jurisdiction": "us-wa",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 82.87.020; annual adjustment under RCW 82.87.060; WA Dept. of Revenue",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "CPI-indexed. The window is closed at the tax year: an open window would assert this is also a later year's legal amount.",
+        "backfill": "Retrieve RCW 82.87.020/.060 and the DOR table; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 278000,
+        "unit": "usd",
+        "tax_year": 2025,
+        "indexed": true,
+        "description": "Standard deduction against Washington capital gains."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.standard_deduction",
+      "jurisdiction": "us-wa",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "expected",
+      "provenance": {
+        "citation": "RCW 82.87.020; annual adjustment under RCW 82.87.060; WA Dept. of Revenue",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "VERIFY at WA Dept. of Revenue. A TY2026 amount exists and is not recorded here; none is inferred from the TY2025 amount or from any indexation assumption.",
+        "backfill": "TY2026 amount from WA DOR. Lands as a superseding record, never an edit."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": null,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Standard deduction against Washington capital gains -- TY2026 amount not yet recorded."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw82_87.retirement_account_exemption",
+      "jurisdiction": "us-wa",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 82.87",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=82.87",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "unretrieved",
+        "pin_status": "Chapter-level cite only. The repo state module lists the retirement-account exemption without a subsection pin, and no subsection was retrieved this session, so none is asserted.",
+        "authority_note": "Also exempt per the state module: real estate; livestock/agricultural assets; timber; commercial fishing privileges. Category fit is flagged VERIFY there.",
+        "backfill": "Retrieve the exempting subsection of RCW 82.87 and its effective date; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "rule",
+        "expression": "asset_location == 'retirement_account' -> exempt",
+        "inputs": [
+          "asset_location"
+        ],
+        "description": "Assets held in retirement accounts are exempt from the Washington capital gains excise tax, so only taxable-bucket realizations enter the base."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw83_100.estate_exclusion_base",
+      "jurisdiction": "us-wa",
+      "valid_from": "2025-07-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "RCW 83.100, as amended by ESSB 5813 (2025) and ESB 6347 (2026)",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=83.100",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Statutory base, CPI-indexed. Washington provides NO portability between spouses. The indexed amount applicable to a given death date is a separate figure -- see us-wa.rcw83_100.estate_exclusion_indexed.",
+        "backfill": "Retrieve RCW 83.100 current text; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 3000000,
+        "unit": "usd",
+        "tax_year": null,
+        "indexed": true,
+        "description": "Washington estate tax exclusion, statutory base amount."
+      }
+    },
+    {
+      "parameter_id": "us-wa.rcw83_100.estate_exclusion_indexed",
+      "jurisdiction": "us-wa",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "expected",
+      "provenance": {
+        "citation": "RCW 83.100; WA Dept. of Revenue indexation table",
+        "source_url": "https://app.leg.wa.gov/rcw/default.aspx?cite=83.100",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "The repo state module reports approximately $3,076,000 for early-2026 deaths and flags it VERIFY against the DOR table; guardrails.md carries WA estate indexation as a standing VERIFY. No amount is asserted here.",
+        "backfill": "Indexed exclusion from the WA DOR table. Lands as a superseding record, never an edit."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": null,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Indexed Washington estate tax exclusion -- amount not yet recorded."
+      }
+    },
+    {
+      "parameter_id": "us.irc.401a9.rmd_applicable_age",
+      "jurisdiction": "us",
+      "valid_from": "2023-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "26 U.S.C. Sec. 401(a)(9)(C)(v) (added by SECURE 2.0 Act of 2022, Pub. L. 117-328, div. T, title I, Sec. 107)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section401&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "e745042f332bfaae59d341ab2c6d755464d977d18a79255359862cbda87b06d6",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/irc-401a9-C-v-applicable-age.txt",
+        "valid_from_basis": "provision_text",
+        "pin_status": "Statutory pin retrieved and verified. The REGULATORY pin resolving the 1959-cohort overlap is VERIFY -- not retrieved.",
+        "authority_note": "Retrieved text of 26 U.S.C. Sec. 401(a)(9)(C)(v): \"(I) In the case of an individual who attains age 72 after December 31, 2022, and age 73 before January 1, 2033, the applicable age is 73. (II) In the case of an individual who attains age 74 after December 31, 2032, the applicable age is 75.\" THESE TWO CLAUSES OVERLAP: a person born in 1959 attains age 73 in 2032 (before Jan. 1, 2033, so clause (I) reaches them) and attains age 74 in 2033 (after Dec. 31, 2032, so clause (II) reaches them too). That is a drafting defect in SECURE 2.0 Sec. 107, not an ambiguity this record may resolve. The expression's clean 1960 split follows the administrative resolution adopted in Treasury's regulations under Sec. 401(a)(9) -- applicable age 73 for pre-1960 cohorts, 75 for 1960 and later. THAT REGULATORY PIN WAS NOT RETRIEVED THIS SESSION and is flagged VERIFY. The reference engine's formula encoded this interpretive choice as if it were bare statute; this note is the seam made visible.",
+        "backfill": "(1) Pub. L. 117-328 div. T Sec. 107(b) effective-date clause -- not retrievable this session (uscode truncates before the notes on Sec. 401; not carried under Sec. 408 or Sec. 408A). (2) The Treasury regulation resolving the 1959 overlap, or a statutory technical correction if one has since been enacted. (3) Raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. The 1959-cohort overlap is recorded in authority_note.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "rule",
+        "expression": "birth_year >= 1960 -> 75; otherwise 73",
+        "inputs": [
+          "birth_year"
+        ],
+        "description": "The applicable age at which required minimum distributions must begin. Statute fixes 73 for individuals attaining age 72 after Dec. 31, 2022 and age 73 before Jan. 1, 2033, and 75 for individuals attaining age 74 after Dec. 31, 2032; the 1960 birth-year split follows the administrative resolution of the overlap those clauses leave. See authority_note."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_74",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 25.5,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 74."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_75",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 24.6,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 75."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_76",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 23.7,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 76."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_77",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 22.9,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 77."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_78",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 22.0,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 78."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_79",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 21.1,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 79."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_80",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 20.2,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 80."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_81",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 19.4,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 81."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_82",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 18.5,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 82."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_83",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 17.7,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 83."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_84",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 16.8,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 84."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_85",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 16.0,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 85."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_86",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 15.2,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 86."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_87",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 14.4,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 87."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_88",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 13.7,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 88."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_89",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 12.9,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 89."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_90",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 12.2,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 90."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_91",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 11.5,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 91."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_92",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 10.8,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 92."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_93",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 10.1,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 93."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_94",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 9.5,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 94."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_95",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 8.9,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 95."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_96",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 8.4,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 96."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_97",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 7.8,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 97."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_98",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 7.3,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 98."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_99",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 6.8,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 99."
+      }
+    },
+    {
+      "parameter_id": "us.treasreg.1_401a9_9.ult_divisor.age_100",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "Treas. Reg. Sec. 1.401(a)(9)-9 (Uniform Lifetime Table); applicability date per T.D. 9930, 85 FR 72472 (Nov. 12, 2020)",
+        "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol6/xml/CFR-2024-title26-vol6-sec1-401a9-9.xml",
+        "authority_level": "regulation",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "ad4e47f42cde81ab8ae28ac95442c239551b05505baefe9817a7ded4b4f4ab11",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/treasreg-1-401a9-9-uniform-lifetime-table.txt",
+        "supporting_evidence": [
+          {
+            "file": "retrieved-text/td-9930-applicability-date.txt",
+            "source_hash": "59ee357463245444c83ee0dfd2ed558d669e89da2fe79abcfe0f013d676d0920",
+            "note": "Establishes valid_from: the tables apply to distribution calendar years beginning on or after January 1, 2022."
+          }
+        ],
+        "valid_from_basis": "retrieved",
+        "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
+        "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 6.4,
+        "unit": "divisor",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Uniform Lifetime Table distribution period at age 100."
+      }
+    },
+    {
+      "parameter_id": "us.irc.408d8.qcd_annual_limit",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRC Sec. 408(d)(8)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "authority_note": "Per person, indexed. An AGI exclusion rather than a deduction, which is why it outperforms a deduction for IRMAA purposes.",
+        "backfill": "Retrieve IRC Sec. 408(d)(8) and the TY2026 indexed amount; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 111000,
+        "unit": "usd",
+        "tax_year": 2026,
+        "indexed": true,
+        "description": "Qualified charitable distribution annual limit."
+      }
+    },
+    {
+      "parameter_id": "us.irc.408d8.qcd_eligibility_age",
+      "jurisdiction": "us",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "IRC Sec. 408(d)(8)",
+        "source_url": "https://www.irs.gov/irb",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "unretrieved",
+        "pin_status": "Cited at paragraph level from the repo authority map; no subparagraph pin retrieved this session.",
+        "authority_note": "Available from this age, which is earlier than any RMD applicable age -- a pre-RMD giving window exists.",
+        "backfill": "Retrieve IRC Sec. 408(d)(8) text and effective date; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 70.5,
+        "unit": "age",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Age from which qualified charitable distributions may be made."
+      }
+    },
+    {
+      "parameter_id": "us.irc.1411.niit_threshold.mfj",
+      "jurisdiction": "us",
+      "valid_from": "2013-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "26 U.S.C. Sec. 1411(b)(1)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1411&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "dca64a9d7362c21cffd56dea8de140a993f97b7f2ea05e67bf6262880f7d919c",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/irc-1411-b-threshold-amount.txt",
+        "valid_from_basis": "retrieved",
+        "authority_note": "Retrieved verbatim, joint return or surviving spouse: $250,000. NOT indexed. Effective for taxable years beginning after December 31, 2012, per the notes retrieved with the section.",
+        "backfill": "Raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 250000,
+        "unit": "usd",
+        "tax_year": null,
+        "indexed": false,
+        "description": "MAGI threshold above which the net investment income tax applies, joint return or surviving spouse."
+      }
+    },
+    {
+      "parameter_id": "us.ssa.full_retirement_age",
+      "jurisdiction": "us",
+      "valid_from": "2022-01-01",
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "42 U.S.C. Sec. 416(l)(1)(E)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section416&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "76275a55e47b6a89b9ec2c0ebc07593538aa187889b5d37e540a4abef9ae8ee8",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/usc42-416-l-retirement-age.txt",
+        "valid_from_basis": "provision_text",
+        "authority_note": "Retrieved verbatim: \"with respect to an individual who attains early retirement age after December 31, 2021, 67 years of age.\" Early retirement age for an old-age benefit is 62 (Sec. 416(l)(2)), so attaining it after Dec. 31, 2021 means born in 1960 or later.",
+        "backfill": "Raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "rule",
+        "expression": "birth_year >= 1960 -> 67",
+        "inputs": [
+          "birth_year"
+        ],
+        "description": "Full retirement age for old-age insurance benefits, for individuals who attain early retirement age after December 31, 2021."
+      }
+    },
+    {
+      "parameter_id": "us.ssa.claim_age.earliest",
+      "jurisdiction": "us",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "42 U.S.C. Sec. 416(l)(2)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section416&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "retrieved",
+        "retrieved_at": "2026-07-31",
+        "source_hash": "76275a55e47b6a89b9ec2c0ebc07593538aa187889b5d37e540a4abef9ae8ee8",
+        "hash_scope": "tool_extracted_text",
+        "hash_source_file": "retrieved-text/usc42-416-l-retirement-age.txt",
+        "valid_from_basis": "unretrieved",
+        "authority_note": "Retrieved verbatim: early retirement age \"means age 62 in the case of an old-age, wife's, or husband's insurance benefit, and age 60 in the case of a widow's or widower's insurance benefit.\" This record carries the old-age figure.",
+        "backfill": "Effective date of 42 U.S.C. Sec. 416(l)(2); raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 62,
+        "unit": "age",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Earliest age at which an old-age insurance benefit may be claimed."
+      }
+    },
+    {
+      "parameter_id": "us.ssa.claim_age.delayed_credit_end",
+      "jurisdiction": "us",
+      "valid_from": null,
+      "valid_to": null,
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "42 U.S.C. Sec. 402(w)",
+        "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section402&num=0&edition=prelim",
+        "authority_level": "statute",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "unretrieved",
+        "pin_status": "SECTION-LEVEL CITE. Sec. 402 truncated at subsection (s) on retrieval, so subsection (w)'s paragraph pin is not asserted. The value is cross-checked against the repo reference table only.",
+        "authority_note": "Delayed retirement credits stop accruing at this age. This literal is RENDERED in the workbook, so it cannot be deferred like a non-rendering citation -- it is minted at the verifiable level with the pin flagged VERIFY.",
+        "backfill": "Retrieve 42 U.S.C. Sec. 402(w) paragraph pin and effective date; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 70,
+        "unit": "age",
+        "tax_year": null,
+        "indexed": false,
+        "description": "Age at which delayed retirement credits stop accruing."
+      }
+    }
+  ]
+}

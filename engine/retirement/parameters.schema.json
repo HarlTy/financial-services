@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HarlTy/financial-services/engine/retirement/parameters.schema.json",
+  "title": "Versioned legal parameter records (plane 1)",
+  "description": "One record per parameter per validity window. Records are never edited; a correction is a NEW record carrying correction_of. Phase 0 payload types are 'scalar' and 'rule' only.",
+  "type": "object",
+  "required": ["schema_version", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_note": { "type": "string" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "$defs": {
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "nullableDate": {
+      "oneOf": [
+        { "$ref": "#/$defs/date" },
+        { "type": "null" }
+      ]
+    },
+
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "parameter_id", "jurisdiction", "valid_from", "valid_to",
+        "recorded_at", "superseded_at", "correction_of", "status",
+        "provenance", "verification", "payload"
+      ],
+      "properties": {
+        "parameter_id": { "type": "string", "minLength": 1 },
+        "jurisdiction": { "enum": ["us", "us-wa"] },
+        "valid_from": { "$ref": "#/$defs/nullableDate" },
+        "valid_to": { "$ref": "#/$defs/nullableDate" },
+        "recorded_at": { "$ref": "#/$defs/date" },
+        "superseded_at": { "$ref": "#/$defs/nullableDate" },
+        "correction_of": { "type": ["string", "null"] },
+        "status": { "enum": ["active", "expected", "terminated", "superseded"] },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "verification": { "$ref": "#/$defs/verification" },
+        "payload": { "$ref": "#/$defs/payload" }
+      },
+      "allOf": [
+        {
+          "$comment": "An 'expected' record announces that an amount will exist; it may not carry one.",
+          "if": { "properties": { "status": { "const": "expected" } }, "required": ["status"] },
+          "then": {
+            "properties": {
+              "payload": {
+                "properties": { "value": { "type": "null" } },
+                "required": ["value"]
+              }
+            }
+          }
+        },
+        {
+          "$comment": "valid_from and its basis are paired: no basis without a date, no date without a basis.",
+          "if": {
+            "properties": {
+              "provenance": {
+                "properties": { "valid_from_basis": { "const": "unretrieved" } },
+                "required": ["valid_from_basis"]
+              }
+            }
+          },
+          "then": { "properties": { "valid_from": { "type": "null" } } },
+          "else": { "properties": { "valid_from": { "$ref": "#/$defs/date" } } }
+        }
+      ]
+    },
+
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "citation", "source_url", "authority_level",
+        "retrieved_at", "source_hash", "retrieval_status", "valid_from_basis"
+      ],
+      "properties": {
+        "citation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Pin-cite to primary authority. If the pin could not be verified, cite at the level that was verified and set pin_status."
+        },
+        "source_url": { "type": "string" },
+        "authority_level": { "enum": ["statute", "regulation", "agency_guidance"] },
+        "retrieved_at": { "$ref": "#/$defs/nullableDate" },
+        "source_hash": { "type": ["string", "null"], "pattern": "^([a-f0-9]{64})?$" },
+        "retrieval_status": { "enum": ["retrieved", "not_retrieved"] },
+        "hash_scope": {
+          "enum": ["tool_extracted_text", "raw_source"],
+          "description": "What source_hash covers. 'tool_extracted_text' hashes the stored extraction under retrieved-text/, NOT the publisher's bytes -- a weaker drift detector, and queued for upgrade."
+        },
+        "hash_source_file": {
+          "type": "string",
+          "description": "Path, relative to this file, of the retrieved-text file the hash covers."
+        },
+        "supporting_evidence": {
+          "type": "array",
+          "description": "Further retrieved-text files this record depends on -- typically the one establishing valid_from when it differs from the file carrying the value. Each is hashed, so nothing a record rests on goes unverified.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["file", "source_hash"],
+            "properties": {
+              "file": { "type": "string" },
+              "source_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "valid_from_basis": {
+          "enum": ["retrieved", "provision_text", "repo_verified", "unretrieved"],
+          "description": "What the validity start rests on. 'provision_text' = the codified provision's own operative language, retrieved this session. 'repo_verified' = a human-verified file in this repo, named in repo_source. 'unretrieved' = no lower bound is asserted."
+        },
+        "repo_source": { "type": "string" },
+        "repo_source_verified_on": { "$ref": "#/$defs/nullableDate" },
+        "pin_status": {
+          "type": "string",
+          "description": "Present when the subsection pin could not be verified this session; states what was verified and what was not."
+        },
+        "authority_note": { "type": "string" },
+        "backfill": {
+          "type": "string",
+          "description": "What a retrieval-capable session must obtain, to land as a superseding record."
+        }
+      },
+      "allOf": [
+        {
+          "$comment": "No half-states: not_retrieved means both hash and date are null and there is no hash_scope.",
+          "if": {
+            "properties": { "retrieval_status": { "const": "not_retrieved" } },
+            "required": ["retrieval_status"]
+          },
+          "then": {
+            "properties": {
+              "source_hash": { "type": "null" },
+              "retrieved_at": { "type": "null" },
+              "hash_scope": false,
+              "hash_source_file": false
+            }
+          },
+          "else": {
+            "required": ["hash_scope", "hash_source_file"],
+            "properties": {
+              "source_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+              "retrieved_at": { "$ref": "#/$defs/date" }
+            }
+          }
+        },
+        {
+          "$comment": "A repo_verified validity start must name the file and that file's own verification date.",
+          "if": {
+            "properties": { "valid_from_basis": { "const": "repo_verified" } },
+            "required": ["valid_from_basis"]
+          },
+          "then": {
+            "required": ["repo_source", "repo_source_verified_on"],
+            "properties": { "repo_source_verified_on": { "$ref": "#/$defs/date" } }
+          }
+        }
+      ]
+    },
+
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verified_by", "verified_on", "status"],
+      "properties": {
+        "verified_by": {
+          "type": ["string", "null"],
+          "description": "A human. Null means no human has signed off -- an automated cross-check is recorded in cross_checked_against, not here."
+        },
+        "verified_on": { "$ref": "#/$defs/nullableDate" },
+        "status": { "enum": ["pending_owner_signoff", "owner_verified"] },
+        "method": { "type": "string" },
+        "cross_checked_against": { "type": "string" },
+        "cross_check_verified_on": { "$ref": "#/$defs/nullableDate" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "pending_owner_signoff" } }, "required": ["status"] },
+          "then": {
+            "properties": {
+              "verified_by": { "type": "null" },
+              "verified_on": { "type": "null" }
+            }
+          },
+          "else": {
+            "properties": {
+              "verified_by": { "type": "string" },
+              "verified_on": { "$ref": "#/$defs/date" }
+            }
+          }
+        }
+      ]
+    },
+
+    "payload": {
+      "oneOf": [
+        { "$ref": "#/$defs/scalarPayload" },
+        { "$ref": "#/$defs/rulePayload" }
+      ]
+    },
+
+    "scalarPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "value", "unit", "tax_year"],
+      "properties": {
+        "type": { "const": "scalar" },
+        "value": { "type": ["number", "null"] },
+        "unit": { "enum": ["usd", "rate", "years", "age", "divisor"] },
+        "tax_year": { "type": ["integer", "null"] },
+        "indexed": { "type": "boolean" },
+        "description": { "type": "string" }
+      }
+    },
+
+    "rulePayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "expression", "inputs", "description"],
+      "properties": {
+        "type": { "const": "rule" },
+        "expression": { "type": "string", "minLength": 1 },
+        "inputs": { "type": "array", "items": { "type": "string" } },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Citation-anchored: states the rule as the cited authority states it."
+        },
+        "value": { "type": "null" }
+      }
+    }
+  }
+}

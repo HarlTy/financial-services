@@ -1,0 +1,10 @@
+source_url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section1395r&num=0&edition=prelim
+authority: 42 U.S.C. Sec. 1395r(i)(4)(B)(i)
+retrieved_at: 2026-07-31
+hash_scope: tool_extracted_text
+note: Pin confirmed as (i)(4)(B)(i). The provision's own effective date was NOT
+      retrieved. Queued for backfill.
+---
+"the individual's modified adjusted gross income shall be such income determined
+for the individual's last taxable year beginning in the second calendar year
+preceding the year involved."

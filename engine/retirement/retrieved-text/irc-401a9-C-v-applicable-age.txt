@@ -1,0 +1,15 @@
+source_url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section401&num=0&edition=prelim
+authority: 26 U.S.C. Sec. 401(a)(9)(C)(v) (added by SECURE 2.0 Act of 2022,
+           Pub. L. 117-328, div. T, title I, sec. 107)
+retrieved_at: 2026-07-31
+hash_scope: tool_extracted_text
+note: The Pub. L. 117-328 div. T sec. 107(b) effective-date note was NOT
+      retrieved -- the uscode granule truncates before the statutory notes on
+      this section, and the note is not carried under sec. 408 or sec. 408A.
+      Queued for backfill.
+---
+"(v) Applicable age.-
+(I) In the case of an individual who attains age 72 after December 31, 2022,
+and age 73 before January 1, 2033, the applicable age is 73.
+(II) In the case of an individual who attains age 74 after December 31, 2032,
+the applicable age is 75."

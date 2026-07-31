@@ -1,0 +1,19 @@
+source_url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1411&num=0&edition=prelim
+authority: 26 U.S.C. Sec. 1411(b)
+retrieved_at: 2026-07-31
+hash_scope: tool_extracted_text
+---
+"(b) Threshold amount
+
+For purposes of this chapter, the term 'threshold amount' means-
+
+(1) in the case of a taxpayer making a joint return under section 6013 or a
+surviving spouse (as defined in section 2(a)), $250,000,
+
+(2) in the case of a married taxpayer (as defined in section 7703) filing a
+separate return, 1/2 of the dollar amount determined under paragraph (1), and
+
+(3) in any other case, $200,000."
+
+Effective date, from the notes on the same page:
+the statute applies to "taxable years beginning after December 31, 2012."

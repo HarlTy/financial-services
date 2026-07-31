@@ -437,7 +437,7 @@ equivalent here and any difference is a regression rather than a rubric artifact
 
 | Case | Baseline | This run | F | C | S (was W) | I | X | R | Delta |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | PASS | **FAIL** | ✓ 3/3 | **✗ run A** | — | — | — | — | **REGRESSION** |
+| 1 | PASS | **FAIL** | ✓ 3/3 | **✗ run A** | — | — | — | — | **FAIL — not assertable as a regression**; see caveat |
 | 2 | PASS | PASS | ✓ | ✓ | ✓ | — | — | — | none; `$82,078` identical |
 | 3 | PASS | PASS | ✓ | ✓ | ✓ | — | — | — | none |
 | 4 | PASS | PASS | ✓ | ✓ | ✓ | ✓ 5/5 | — | ✓ | none |
@@ -448,15 +448,35 @@ equivalent here and any difference is a regression rather than a rubric artifact
 **Six of seven are indistinguishable from the baseline on the scored criteria.**
 Cases 8 and 9 are new this delta and have no baseline row.
 
-**Honest limit on the case-1 comparison.** The baseline file stores per-case
-*summaries*, not transcripts, so there is no baseline citation label to quote
-against. The comparison rests on the baseline's own run-conditions claim at
-lines 16–20: "*every citation is index-only and labeled accordingly.*" If that
-claim is loose — if the baseline's case 1 also omitted the label and the
-run-conditions line was written as an intent rather than an observation — then
-case 1 is a *pre-existing* intermittency rather than a refactor regression. That
-distinction cannot be settled from this file, and it is the first thing worth
-checking before treating the block as refactor-caused.
+**Hard limit on the case-1 comparison — the baseline's labeling claim is
+unverifiable.** The baseline file stores per-case *summaries*, not transcripts,
+so there is no baseline citation label to quote against. Its run-conditions line
+(lines 16–20, "*every citation is index-only and labeled accordingly*") cannot
+be distinguished from a statement of intent without the underlying session.
+
+**A transcript audit was run on 2026-07-30 to recover it, and it does not
+survive.** All of `~/.claude/projects` was searched for the case-1 prompt string
+("*…long-term capital-gains brackets for a married couple filing jointly*"). The
+only files that contain it are:
+
+| Session | Role | Matches |
+|---|---|---|
+| `9297e861` (+ 4 subagent transcripts) | executor — this run | 12 (+1 each) |
+| `fe4ed634` | executor — this run | 2 |
+| `8c799f4f` | **this grader session** — contains the prompt only because it read the transcripts under `evals/` | 5 |
+
+No session dated before this run contains the case-1 prompt at all. Every
+pre-run occurrence of the label string "*not re-verified this session*" on disk
+sits in a session that never ran case 1 — those are echoes of
+`baseline-v1.0-wa-only.md:80` ("*all were labeled index-only / not re-verified
+this session*") or of the protocol text in `authorities.md`, not evidence of
+case-1 behavior. **The baseline's case-1 session does not survive, so its
+labeling claim is unverifiable, and no comparison of run A against it is
+available in either direction.**
+
+The consequence is carried into the verdict below: the case-1 **failure** is
+confirmed against the rubric, but **"regression" is not assertable**, because
+the baseline state it would be measured against cannot be recovered.
 
 ## Findings vs the executor's provisional notes
 
@@ -561,15 +581,23 @@ Case 2's "*$82,078 matches the baseline exactly*" also holds (baseline line 51).
 
 ## Overall verdict
 
-> **BLOCKED** — one regression inside the baseline-indistinguishability set.
+> **BLOCKED** — an unhardened disclosure protocol with intermittency of unknown
+> onset.
 
 **Reasons:**
 
-1. **Case 1 FAILS on C** (run A, missing index-only citation label). C is inside
-   the {F, C, S, I, X, R} set on which cases 1–7 are judged; the baseline was
-   7/7 and asserts its citations were "labeled accordingly." Under the runbook's
-   own rule, that is a regression until proven otherwise.
-2. Nothing else blocks. **Eight of nine cases pass**, cases 2–7 are
+1. **Case 1 FAILS on C** (run A, missing index-only citation label). The failure
+   itself is **confirmed**: the omission is quoted above, and C's automatic-fail
+   wording, `SKILL.md` rule 9, and `authorities.md` all state the duty run A did
+   not discharge. This is a **rubric defect in the run**, not a scoring artifact.
+2. **"Regression" is not assertable.** C is inside the {F, C, S, I, X, R} set on
+   which cases 1–7 are judged, and the baseline was 7/7 — but the transcript
+   audit above establishes that the baseline's case-1 session does not survive,
+   so its labeling claim cannot be verified and run A cannot be compared against
+   it. **The onset of this intermittency is unknown**: it may predate the
+   refactor entirely. The block therefore rests on the defect and its unknown
+   rate, not on a demonstrated regression.
+3. Nothing else blocks. **Eight of nine cases pass**, cases 2–7 are
    indistinguishable from the baseline on every scored criterion, the two new
    cases (8, 9) both pass, and **criterion A passes everywhere** — the new
    criterion introduced no findings.
@@ -577,22 +605,31 @@ Case 2's "*$82,078 matches the baseline exactly*" also holds (baseline line 51).
 **Weighing.** The failure is a **disclosure omission in one of three runs, not a
 fabrication**: every authority run A cites resolves to the map or the tables.
 That is the milder of C's two failure modes, and F — the criterion the N=3 design
-was built to stress — passed 3/3. This is a narrow block, not a broad one.
+was built to stress — passed 3/3. This is a narrow block, not a broad one. What
+makes it a block anyway is that the rate is unmeasured and the protocol that
+produced it is unhardened.
 
-**Unblock paths, in ascending cost:**
+**Unblock path — one, because the other was executed and is exhausted.**
 
-1. **Settle the baseline question first.** Determine whether the baseline's
-   case-1 response actually carried the label or whether its run-conditions line
-   was written as intent. If the latter, this is pre-existing intermittency, the
-   regression claim dissolves, and the finding downgrades to a known-variance
-   note.
-2. **Re-run case 1 at higher N** to establish the label-omission rate, and record
-   it as measured intermittency rather than a pass/fail coin flip. The runbook
-   already anticipates this shape of answer for case 1.
-3. **Tighten the instruction** if the rate is material: `SKILL.md` rule 9 states
-   the labeling duty in a subordinate clause ("*label index-only citations as not
-   re-verified*"), which is weaker than the figure-flag rule in rule 1 that
-   propagated 3/3. That asymmetry is a plausible cause and a cheap fix.
+The transcript-audit path ("recover the baseline's case-1 session and settle
+whether this is a regression") **was run on 2026-07-30 and is closed**: the
+session does not exist on disk. It should not be re-attempted.
+
+What remains is a fix-then-measure path, in that order:
+
+1. **Harden the disclosure protocol.** `SKILL.md` rule 9 states the labeling duty
+   in a subordinate clause ("*label index-only citations as not re-verified*"),
+   which is materially weaker than rule 1's imperative on figure flags ("*the
+   flag travels with it into the answer*") — and rule 1 propagated 3/3 while
+   rule 9 propagated 2/3. Either **restate rule 9 imperatively**, or **embed the
+   label in the citation-block template itself** so it ships with the structure
+   rather than depending on recall. The second is the mechanism that made case 8
+   reliable: the fallback is verbatim because it is stored as a block, not as an
+   instruction to remember.
+2. **Then re-run case 1 at N≥5 and gate C at 5/5.** N=3 was sized for F and
+   caught this only incidentally; it cannot measure a rate. Uniform passing at
+   N≥5 clears the block. Anything less records a measured intermittency rate and
+   keeps it open.
 
 **Also carry forward, independent of the block:**
 

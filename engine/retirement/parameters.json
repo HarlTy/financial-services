@@ -21,6 +21,10 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "IRS Notice 2025-67",
+        "code_cite": "IRC 402(g)",
+        "issuer": "IRS",
+        "confidence": "final",
         "authority_note": "Shared across ALL employers, unlike the Sec. 415(c) limit.",
         "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
       },
@@ -60,6 +64,10 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "IRS Notice 2025-67",
+        "code_cite": "IRC 414(v)",
+        "issuer": "IRS",
+        "confidence": "final",
         "pin_status": "IRC Sec. 414(v) verified at section level against the repo authority map; the subsection pin was not retrieved this session.",
         "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
       },
@@ -99,6 +107,10 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "IRS Notice 2025-67",
+        "code_cite": "IRC 414(v)",
+        "issuer": "IRS",
+        "confidence": "final",
         "pin_status": "IRC Sec. 414(v) verified at section level against the repo authority map; the subsection pin was not retrieved this session.",
         "authority_note": "Replaces the age-50 catch-up in the years it applies.",
         "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
@@ -139,6 +151,10 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "IRS Notice 2025-67",
+        "code_cite": "IRC 415(c)",
+        "issuer": "IRS",
+        "confidence": "final",
         "authority_note": "Applies SEPARATELY per unrelated employer.",
         "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
       },
@@ -193,7 +209,12 @@
         "inputs": [
           "age"
         ],
-        "description": "The age-based catch-up available in a contribution year: the enhanced catch-up applies for ages 60 through 63 and replaces the age-50 catch-up in those years; the age-50 catch-up applies from age 50 otherwise."
+        "description": "The age-based catch-up available in a contribution year: the enhanced catch-up applies for ages 60 through 63 and replaces the age-50 catch-up in those years; the age-50 catch-up applies from age 50 otherwise.",
+        "constants": {
+          "catchup_50_from_age": 50,
+          "enhanced_from_age": 60,
+          "enhanced_to_age": 63
+        }
       }
     },
     {
@@ -215,6 +236,9 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "SECURE 2.0 sec. 603",
+        "code_cite": "IRC 402A",
+        "confidence": "final",
         "pin_status": "Cited at section level from the repo authority map; no subsection pin retrieved this session.",
         "authority_note": "Per-employer test on prior-year FICA wages (Form W-2 box 3). Applies to 401(k)/403(b)/457(b); not SEP or SIMPLE IRAs.",
         "backfill": "Retrieve SECURE 2.0 Sec. 603 text and pin; raw-source hash."
@@ -255,6 +279,11 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "CMS 2026 fact sheet",
+        "code_cite": "42 U.S.C. 1395r(i)",
+        "issuer": "CMS",
+        "issued_on": "2025-11-14",
+        "confidence": "final",
         "authority_note": "Assessed PER PERSON on a two-year lookback; each tier is a CLIFF -- one dollar over triggers the full surcharge. The first four tiers are indexed; the fifth is frozen until 2028.",
         "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
       },
@@ -294,6 +323,11 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "CMS 2026 fact sheet",
+        "code_cite": "42 U.S.C. 1395r(i)",
+        "issuer": "CMS",
+        "issued_on": "2025-11-14",
+        "confidence": "final",
         "authority_note": "Assessed PER PERSON on a two-year lookback; each tier is a CLIFF -- one dollar over triggers the full surcharge. The first four tiers are indexed; the fifth is frozen until 2028.",
         "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
       },
@@ -333,6 +367,8 @@
         "hash_scope": "tool_extracted_text",
         "hash_source_file": "retrieved-text/usc42-1395r-i-irmaa-lookback.txt",
         "valid_from_basis": "unretrieved",
+        "code_cite": "42 U.S.C. 1395r(i)",
+        "confidence": "final",
         "authority_note": "Retrieved verbatim: modified adjusted gross income is determined \"for the individual's last taxable year beginning in the second calendar year preceding the year involved.\" So a surcharge assessed for year Y rests on year Y-2 income.",
         "backfill": "Effective date of 42 U.S.C. Sec. 1395r(i)(4)(B)(i); raw-source hash."
       },
@@ -354,6 +390,50 @@
       }
     },
     {
+      "parameter_id": "us.medicare.irmaa.fifth_tier_freeze_year",
+      "jurisdiction": "us",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "recorded_at": "2026-07-31",
+      "superseded_at": null,
+      "correction_of": null,
+      "status": "active",
+      "provenance": {
+        "citation": "CMS 2026 Medicare Parts A & B premiums and deductibles fact sheet (Nov. 14, 2025); 42 U.S.C. Sec. 1395r(i)",
+        "source_url": "https://www.cms.gov/newsroom",
+        "authority_level": "agency_guidance",
+        "retrieval_status": "not_retrieved",
+        "retrieved_at": null,
+        "source_hash": null,
+        "valid_from_basis": "repo_verified",
+        "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "repo_source_verified_on": "2026-07-28",
+        "short_cite": "CMS 2026 fact sheet",
+        "code_cite": "42 U.S.C. 1395r(i)",
+        "issuer": "CMS",
+        "issued_on": "2025-11-14",
+        "confidence": "final",
+        "authority_note": "The first four IRMAA tiers are indexed; the fifth is frozen until this year.",
+        "backfill": "Retrieve the statutory freeze provision and its pin; raw-source hash."
+      },
+      "verification": {
+        "verified_by": null,
+        "verified_on": null,
+        "status": "pending_owner_signoff",
+        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
+        "cross_check_verified_on": "2026-07-28"
+      },
+      "payload": {
+        "type": "scalar",
+        "value": 2028,
+        "unit": "year",
+        "tax_year": 2026,
+        "indexed": false,
+        "description": "Year until which the fifth IRMAA tier threshold is frozen."
+      }
+    },
+    {
       "parameter_id": "us-wa.rcw82_87.excise_rate_base",
       "jurisdiction": "us-wa",
       "valid_from": "2025-01-01",
@@ -372,6 +452,9 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "RCW 82.87",
+        "code_cite": "RCW 82.87",
+        "confidence": "final",
         "authority_note": "\"Washington capital gains\" is a defined term (RCW 82.87.020, allocation under RCW 82.87.060): long-term gain allocated to Washington, NET of the standard deduction. Both charges operate on that same post-deduction figure.",
         "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
       },
@@ -489,6 +572,11 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "RCW 82.87",
+        "code_cite": "RCW 82.87",
+        "issuer": "WA DOR",
+        "confidence": "verify",
+        "confidence_note": "The TY2026 amount is unpublished to this record; see the sibling expected record.",
         "authority_note": "CPI-indexed. The window is closed at the tax year: an open window would assert this is also a later year's legal amount.",
         "backfill": "Retrieve RCW 82.87.020/.060 and the DOR table; raw-source hash."
       },
@@ -528,6 +616,10 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "RCW 82.87",
+        "issuer": "WA DOR",
+        "confidence": "verify",
+        "confidence_note": "Outstanding: the TY2026 amount itself, from the WA DOR table. This record exists to say it is missing.",
         "authority_note": "VERIFY at WA Dept. of Revenue. A TY2026 amount exists and is not recorded here; none is inferred from the TY2025 amount or from any indexation assumption.",
         "backfill": "TY2026 amount from WA DOR. Lands as a superseding record, never an edit."
       },
@@ -605,6 +697,9 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "repo_source_verified_on": "2026-07-28",
+        "short_cite": "RCW 83.100",
+        "code_cite": "RCW 83.100",
+        "confidence": "final",
         "authority_note": "Statutory base, CPI-indexed. Washington provides NO portability between spouses. The indexed amount applicable to a given death date is a separate figure -- see us-wa.rcw83_100.estate_exclusion_indexed.",
         "backfill": "Retrieve RCW 83.100 current text; raw-source hash."
       },
@@ -683,6 +778,9 @@
         "hash_scope": "tool_extracted_text",
         "hash_source_file": "retrieved-text/irc-401a9-C-v-applicable-age.txt",
         "valid_from_basis": "provision_text",
+        "short_cite": "SECURE 2.0",
+        "code_cite": "IRC 401(a)(9)",
+        "confidence": "final",
         "pin_status": "Statutory pin retrieved and verified. The REGULATORY pin resolving the 1959-cohort overlap is VERIFY -- not retrieved.",
         "authority_note": "Retrieved text of 26 U.S.C. Sec. 401(a)(9)(C)(v): \"(I) In the case of an individual who attains age 72 after December 31, 2022, and age 73 before January 1, 2033, the applicable age is 73. (II) In the case of an individual who attains age 74 after December 31, 2032, the applicable age is 75.\" THESE TWO CLAUSES OVERLAP: a person born in 1959 attains age 73 in 2032 (before Jan. 1, 2033, so clause (I) reaches them) and attains age 74 in 2033 (after Dec. 31, 2032, so clause (II) reaches them too). That is a drafting defect in SECURE 2.0 Sec. 107, not an ambiguity this record may resolve. The expression's clean 1960 split follows the administrative resolution adopted in Treasury's regulations under Sec. 401(a)(9) -- applicable age 73 for pre-1960 cohorts, 75 for 1960 and later. THAT REGULATORY PIN WAS NOT RETRIEVED THIS SESSION and is flagged VERIFY. The reference engine's formula encoded this interpretive choice as if it were bare statute; this note is the seam made visible.",
         "backfill": "(1) Pub. L. 117-328 div. T Sec. 107(b) effective-date clause -- not retrievable this session (uscode truncates before the notes on Sec. 401; not carried under Sec. 408 or Sec. 408A). (2) The Treasury regulation resolving the 1959 overlap, or a statutory technical correction if one has since been enacted. (3) Raw-source hash."
@@ -701,7 +799,13 @@
         "inputs": [
           "birth_year"
         ],
-        "description": "The applicable age at which required minimum distributions must begin. Statute fixes 73 for individuals attaining age 72 after Dec. 31, 2022 and age 73 before Jan. 1, 2033, and 75 for individuals attaining age 74 after Dec. 31, 2032; the 1960 birth-year split follows the administrative resolution of the overlap those clauses leave. See authority_note."
+        "description": "The applicable age at which required minimum distributions must begin. Statute fixes 73 for individuals attaining age 72 after Dec. 31, 2022 and age 73 before Jan. 1, 2033, and 75 for individuals attaining age 74 after Dec. 31, 2032; the 1960 birth-year split follows the administrative resolution of the overlap those clauses leave. See authority_note.",
+        "constants": {
+          "cohort_birth_year": 1960,
+          "applicable_age_at_or_after": 75,
+          "applicable_age_before": 73,
+          "prior_cohort_first_birth_year": 1951
+        }
       }
     },
     {
@@ -730,6 +834,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -776,6 +883,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -822,6 +932,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -868,6 +981,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -914,6 +1030,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -960,6 +1079,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1006,6 +1128,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1052,6 +1177,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1098,6 +1226,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1144,6 +1275,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1190,6 +1324,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1236,6 +1373,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1282,6 +1422,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1328,6 +1471,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1374,6 +1520,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1420,6 +1569,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1466,6 +1618,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1512,6 +1667,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1558,6 +1716,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1604,6 +1765,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1650,6 +1814,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1696,6 +1863,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1742,6 +1912,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1788,6 +1961,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1834,6 +2010,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1880,6 +2059,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1926,6 +2108,9 @@
           }
         ],
         "valid_from_basis": "retrieved",
+        "code_cite": "Treas. Reg. 1.401(a)(9)-9",
+        "confidence": "verify",
+        "confidence_note": "Cross-check against IRS Pub. 590-B has not been performed; the CFR text was.",
         "authority_note": "Applicability date evidenced in retrieved-text/td-9930-applicability-date.txt: \"The final regulations in this document apply to distribution calendar years ... beginning on or after January 1, 2022.\" PHASE 0 REPRESENTATION ONLY: the table's unit of legal change is the WHOLE TABLE -- one Treasury event replaces all 27 divisors together, under one citation and one hash. Splitting it into 27 scalar records is what the Phase 0 payload types allow, not the endorsed end state; Phase 1 should evaluate a consolidated table payload.",
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
@@ -1965,6 +2150,8 @@
         "valid_from_basis": "repo_verified",
         "repo_source": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "repo_source_verified_on": "2026-07-28",
+        "code_cite": "IRC 408(d)(8)",
+        "confidence": "final",
         "authority_note": "Per person, indexed. An AGI exclusion rather than a deduction, which is why it outperforms a deduction for IRMAA purposes.",
         "backfill": "Retrieve IRC Sec. 408(d)(8) and the TY2026 indexed amount; raw-source hash."
       },
@@ -2002,6 +2189,8 @@
         "retrieved_at": null,
         "source_hash": null,
         "valid_from_basis": "unretrieved",
+        "code_cite": "IRC 408(d)(8)",
+        "confidence": "final",
         "pin_status": "Cited at paragraph level from the repo authority map; no subparagraph pin retrieved this session.",
         "authority_note": "Available from this age, which is earlier than any RMD applicable age -- a pre-RMD giving window exists.",
         "backfill": "Retrieve IRC Sec. 408(d)(8) text and effective date; raw-source hash."
@@ -2042,6 +2231,8 @@
         "hash_scope": "tool_extracted_text",
         "hash_source_file": "retrieved-text/irc-1411-b-threshold-amount.txt",
         "valid_from_basis": "retrieved",
+        "code_cite": "IRC 1411",
+        "confidence": "final",
         "authority_note": "Retrieved verbatim, joint return or surviving spouse: $250,000. NOT indexed. Effective for taxable years beginning after December 31, 2012, per the notes retrieved with the section.",
         "backfill": "Raw-source hash."
       },
@@ -2081,6 +2272,8 @@
         "hash_scope": "tool_extracted_text",
         "hash_source_file": "retrieved-text/usc42-416-l-retirement-age.txt",
         "valid_from_basis": "provision_text",
+        "code_cite": "42 U.S.C. 416(l)",
+        "confidence": "final",
         "authority_note": "Retrieved verbatim: \"with respect to an individual who attains early retirement age after December 31, 2021, 67 years of age.\" Early retirement age for an old-age benefit is 62 (Sec. 416(l)(2)), so attaining it after Dec. 31, 2021 means born in 1960 or later.",
         "backfill": "Raw-source hash."
       },
@@ -2098,7 +2291,11 @@
         "inputs": [
           "birth_year"
         ],
-        "description": "Full retirement age for old-age insurance benefits, for individuals who attain early retirement age after December 31, 2021."
+        "description": "Full retirement age for old-age insurance benefits, for individuals who attain early retirement age after December 31, 2021.",
+        "constants": {
+          "cohort_birth_year": 1960,
+          "full_retirement_age": 67
+        }
       }
     },
     {

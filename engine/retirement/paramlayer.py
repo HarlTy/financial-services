@@ -52,7 +52,8 @@ _LEVELS = {"statute", "regulation", "agency_guidance"}
 _RETRIEVAL = {"retrieved", "not_retrieved"}
 _HASH_SCOPES = {"tool_extracted_text", "raw_source"}
 _BASES = {"retrieved", "provision_text", "repo_verified", "unretrieved"}
-_UNITS = {"usd", "rate", "years", "age", "divisor"}
+_UNITS = {"usd", "rate", "years", "year", "age", "divisor"}
+_CONFIDENCE = {"final", "verify"}
 
 
 class ParameterError(Exception):
@@ -171,6 +172,11 @@ class Registry:
             elif r["valid_from"] is None:
                 bad(i, f"valid_from is null but basis is {p.get('valid_from_basis')!r}")
 
+            if "confidence" in p and p["confidence"] not in _CONFIDENCE:
+                bad(i, f"confidence {p['confidence']!r} not one of {sorted(_CONFIDENCE)}")
+            if p.get("confidence") == "verify" and not p.get("confidence_note"):
+                bad(i, "confidence 'verify' without a confidence_note saying what is outstanding")
+
             if p.get("valid_from_basis") == "repo_verified":
                 if not p.get("repo_source") or not p.get("repo_source_verified_on"):
                     bad(i, "repo_verified basis without repo_source and its verification date")
@@ -267,9 +273,21 @@ class Registry:
         hits = self._active(parameter_id)
         if not hits:
             raise ParameterNotFound(parameter_id, "latest_published")
+        return self.latest_published_record(parameter_id)["payload"], \
+            self.latest_published_record(parameter_id)["valid_to"]
+
+    def latest_published_record(self, parameter_id: str) -> dict:
+        """The whole newest active record, for callers that need its provenance.
+
+        A parameter the model projects past cannot be reached with as_of() --
+        that is the point of the closed window -- so its citations and status
+        flags have to come through this door too.
+        """
+        hits = self._active(parameter_id)
+        if not hits:
+            raise ParameterNotFound(parameter_id, "latest_published")
         hits.sort(key=lambda r: (r["valid_from"] or "0000-00-00"))
-        newest = hits[-1]
-        return newest["payload"], newest["valid_to"]
+        return hits[-1]
 
     def record_for(self, parameter_id: str, when) -> dict:
         """The whole record, for callers that need provenance (citations,

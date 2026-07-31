@@ -120,6 +120,24 @@
         },
         "repo_source": { "type": "string" },
         "repo_source_verified_on": { "$ref": "#/$defs/nullableDate" },
+        "short_cite": {
+          "type": "string",
+          "description": "The issuance's short form, as rendered into a document (e.g. 'IRS Notice 2025-67', 'RCW 82.87'). Lives here so a document composing a citation cannot drift from the record."
+        },
+        "code_cite": {
+          "type": "string",
+          "description": "The codified short form (e.g. 'IRC 402(g)', '42 U.S.C. 1395r(i)')."
+        },
+        "issuer": {
+          "type": "string",
+          "description": "The body that issued or administers the figure (e.g. 'IRS', 'CMS', 'WA DOR')."
+        },
+        "issued_on": { "$ref": "#/$defs/date" },
+        "confidence": {
+          "enum": ["final", "verify"],
+          "description": "Mirrors the repo skill's FINAL/VERIFY convention. 'final' = confirmed against the cited official release. 'verify' = a stated confirmation step is still outstanding; confidence_note says which."
+        },
+        "confidence_note": { "type": "string" },
         "pin_status": {
           "type": "string",
           "description": "Present when the subsection pin could not be verified this session; states what was verified and what was not."
@@ -215,7 +233,7 @@
       "properties": {
         "type": { "const": "scalar" },
         "value": { "type": ["number", "null"] },
-        "unit": { "enum": ["usd", "rate", "years", "age", "divisor"] },
+        "unit": { "enum": ["usd", "rate", "years", "year", "age", "divisor"] },
         "tax_year": { "type": ["integer", "null"] },
         "indexed": { "type": "boolean" },
         "description": { "type": "string" }
@@ -234,6 +252,11 @@
           "type": "string",
           "minLength": 1,
           "description": "Citation-anchored: states the rule as the cited authority states it."
+        },
+        "constants": {
+          "type": "object",
+          "description": "The rule's named constants, machine-readable. The expression states the rule for a human; these let a caller use its parts without parsing prose.",
+          "additionalProperties": { "type": "number" }
         },
         "value": { "type": "null" }
       }

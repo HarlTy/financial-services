@@ -54,5 +54,6 @@ TASKS.md
 MEMORY.md
 .claude/worktrees/
 
-# Engine sources carrying personal inputs - local only, never commit (parameter layer will split personal inputs from committable engine code)
+# Local reference fixture for the parameter-layer identity test (embedded values are owner-attested fictitious examples); real personal inputs live only in *.local.json
 /engine/retirement/build_v2.py
+/engine/retirement/*.local.json

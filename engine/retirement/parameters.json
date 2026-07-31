@@ -29,10 +29,10 @@
         "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -72,10 +72,10 @@
         "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -116,10 +116,10 @@
         "backfill": "Retrieve Notice 2025-67 text and the IRC Sec. 414(v) subsection pin; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -159,10 +159,10 @@
         "backfill": "Retrieve Notice 2025-67 text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -196,10 +196,10 @@
         "backfill": "Retrieve IRC Sec. 414(v) text, its subsection pins, and the effective date of the age 60-63 catch-up; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -244,10 +244,10 @@
         "backfill": "Retrieve SECURE 2.0 Sec. 603 text and pin; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -288,10 +288,10 @@
         "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -332,10 +332,10 @@
         "backfill": "Retrieve the CMS 2026 fact sheet; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -373,10 +373,10 @@
         "backfill": "Effective date of 42 U.S.C. Sec. 1395r(i)(4)(B)(i); raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -417,10 +417,10 @@
         "backfill": "Retrieve the statutory freeze provision and its pin; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -459,10 +459,10 @@
         "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -498,10 +498,10 @@
         "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -537,10 +537,10 @@
         "backfill": "Retrieve RCW 82.87.040 current text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -581,10 +581,10 @@
         "backfill": "Retrieve RCW 82.87.020/.060 and the DOR table; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -624,10 +624,10 @@
         "backfill": "TY2026 amount from WA DOR. Lands as a superseding record, never an edit."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -662,10 +662,10 @@
         "backfill": "Retrieve the exempting subsection of RCW 82.87 and its effective date; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -704,10 +704,10 @@
         "backfill": "Retrieve RCW 83.100 current text; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -743,10 +743,10 @@
         "backfill": "Indexed exclusion from the WA DOR table. Lands as a superseding record, never an edit."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo state module. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/states/washington.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -786,10 +786,10 @@
         "backfill": "(1) Pub. L. 117-328 div. T Sec. 107(b) effective-date clause -- not retrievable this session (uscode truncates before the notes on Sec. 401; not carried under Sec. 408 or Sec. 408A). (2) The Treasury regulation resolving the 1959 overlap, or a statutory technical correction if one has since been enacted. (3) Raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. The 1959-cohort overlap is recorded in authority_note.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -841,10 +841,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -890,10 +890,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -939,10 +939,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -988,10 +988,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1037,10 +1037,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1086,10 +1086,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1135,10 +1135,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1184,10 +1184,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1233,10 +1233,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1282,10 +1282,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1331,10 +1331,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1380,10 +1380,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1429,10 +1429,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1478,10 +1478,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1527,10 +1527,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1576,10 +1576,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1625,10 +1625,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1674,10 +1674,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1723,10 +1723,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1772,10 +1772,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1821,10 +1821,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1870,10 +1870,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1919,10 +1919,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -1968,10 +1968,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2017,10 +2017,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2066,10 +2066,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2115,10 +2115,10 @@
         "backfill": "Raw-source hash of the CFR section and of the T.D. 9930 text."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off. All 27 divisors matched the retrieved table exactly.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2156,10 +2156,10 @@
         "backfill": "Retrieve IRC Sec. 408(d)(8) and the TY2026 indexed amount; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2196,10 +2196,10 @@
         "backfill": "Retrieve IRC Sec. 408(d)(8) text and effective date; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2237,10 +2237,10 @@
         "backfill": "Raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2278,10 +2278,10 @@
         "backfill": "Raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2321,10 +2321,10 @@
         "backfill": "Effective date of 42 U.S.C. Sec. 416(l)(2); raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine and compared against primary text retrieved this session. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },
@@ -2359,10 +2359,10 @@
         "backfill": "Retrieve 42 U.S.C. Sec. 402(w) paragraph pin and effective date; raw-source hash."
       },
       "verification": {
-        "verified_by": null,
-        "verified_on": null,
-        "status": "pending_owner_signoff",
-        "method": "Value transcribed from the reference engine; cross-checked against a human-verified repo reference table. No human has signed off.",
+        "verified_by": "HarlTy",
+        "verified_on": "2026-07-31",
+        "status": "owner_verified",
+        "method": "Owner line-by-line review of SIGNOFF-PACKET.md @ 7f7ac53: value and citation confirmed against listed evidence (primary sources where linked; committed retrieved-text for retrieved records; T.D. 9930 independently corroborated via Federal Register doc 2020-24723). Correspondence and existence verified; no substantive professional interpretation asserted.",
         "cross_checked_against": "plugins/vertical-plugins/personal-financial-strategy/skills/financial-strategy/references/2026-quick-reference.md",
         "cross_check_verified_on": "2026-07-28"
       },

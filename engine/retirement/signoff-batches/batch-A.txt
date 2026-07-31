@@ -1,0 +1,18 @@
+# Batch A -- generated from parameters.json @ a3b9da7
+us-wa.rcw82_87.excise_rate_base
+us-wa.rcw82_87.excise_rate_surcharge
+us-wa.rcw82_87.retirement_account_exemption
+us-wa.rcw82_87.surcharge_threshold
+us-wa.rcw83_100.estate_exclusion_base
+us.irc.402g.elective_deferral
+us.irc.408d8.qcd_annual_limit
+us.irc.408d8.qcd_eligibility_age
+us.irc.414v.catchup_50plus
+us.irc.414v.catchup_60_63
+us.irc.414v.catchup_age_rule
+us.irc.415c.annual_additions
+us.medicare.irmaa.fifth_tier_freeze_year
+us.medicare.irmaa.tier1_threshold.mfj
+us.medicare.irmaa.tier1_threshold.single
+us.secure2.603.roth_catchup_wage_threshold
+us.ssa.claim_age.delayed_credit_end

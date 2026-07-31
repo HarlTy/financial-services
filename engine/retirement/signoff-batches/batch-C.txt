@@ -1,0 +1,4 @@
+# Batch C -- generated from parameters.json @ a3b9da7
+us-wa.rcw82_87.standard_deduction @ 2025-01-01
+us-wa.rcw82_87.standard_deduction @ 2026-01-01
+us-wa.rcw83_100.estate_exclusion_indexed

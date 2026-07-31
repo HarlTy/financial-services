@@ -53,3 +53,6 @@ coverage/
 TASKS.md
 MEMORY.md
 .claude/worktrees/
+
+# Engine sources carrying personal inputs - local only, never commit (parameter layer will split personal inputs from committable engine code)
+/engine/retirement/build_v2.py
